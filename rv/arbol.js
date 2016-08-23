@@ -9,8 +9,6 @@ renderizador.setSize( window.innerHeight*.95,
 document.body.appendChild (renderizador.domElement);
 var forma = new THREE.CircleGeometry( 1, 64 );
 var material = new THREE.MeshNormalMaterial(); 
-var cubo = new THREE.Mesh(forma, material);
-cubo.rotateX(-Math.PI/4); 
-cubo.rotateY(Math.PI/4);
-escena.add(cubo);
+var circulo = new THREE.Mesh(forma, material);
+escena.add(circulo);
 renderizador.render(escena,camara);
