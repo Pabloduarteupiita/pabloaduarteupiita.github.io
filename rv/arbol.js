@@ -11,6 +11,4 @@ var forma = new THREE.CircleGeometry( 100, 64 );
 var material = new THREE.MeshNormalMaterial(); 
 var circulo = new THREE.Mesh(forma, material);
 escena.add(circulo);
-circulo.positionX(10); 
-circulo.positionY(10); 
 renderizador.render(escena,camara);
