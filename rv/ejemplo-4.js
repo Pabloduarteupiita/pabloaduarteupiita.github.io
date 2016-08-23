@@ -17,5 +17,5 @@ cubo.rotateX(-Math.PI/4);
 cubo.rotateY(Math.PI/4);
 escena.add(cubo);
 cubo.position.x = 10;
-cubo.position.y = 20;
+cubo.position.y = 0;
 renderizador.render(escena,camara);
