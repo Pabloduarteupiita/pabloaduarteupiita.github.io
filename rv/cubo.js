@@ -8,12 +8,7 @@ forma.vertices.push(new THREE.Vector3(-1,1,-1));
 forma.vertices.push(new THREE.Vector3(-1,-1,1));
 forma.vertices.push(new THREE.Vector3(-1,-1,-1));
 
-forma.faces.push(new THREE.Face3(1,2,3)); //cara 0
-forma.faces.push(new THREE.Face3(1,2,5)); //cara 1
-forma.faces.push(new THREE.Face3(1,3,7)); //cara 2
-forma.faces.push(new THREE.Face3(3,4,8)); //cara 3
-forma.faces.push(new THREE.Face3(7,5,6)); //cara 4
-forma.faces.push(new THREE.Face3(4,8,6)); //cara 5
+forma.faces.push(new THREE.Face3(1,2,3,4)); //cara 0
 
 forma.computeBoundingSphere();
 forma.computeFaceNormals();
