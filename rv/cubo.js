@@ -6,7 +6,7 @@ forma.vertices.push(new THREE.Vector3(1,-1,-1));//3
 forma.vertices.push(new THREE.Vector3(-1,1,1));//4
 forma.vertices.push(new THREE.Vector3(-1,1,-1));//5
 forma.vertices.push(new THREE.Vector3(-1,-1,1));//6
-forma.vertices.push(new THREE.Vector3(-1,-1,-1));7
+forma.vertices.push(new THREE.Vector3(-1,-1,-1));//7
 
 forma.faces.push(new THREE.Face3(1,2,3)); //cara 0
 //forma.faces.push(new THREE.Face3(1,2,5)); //cara 1
