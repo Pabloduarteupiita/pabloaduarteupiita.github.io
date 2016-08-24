@@ -1,5 +1,5 @@
 var escena = new THREE.Scene();
-var escena1= new THREE.Scene();
+
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 5;
@@ -19,4 +19,4 @@ var cube = new THREE.Mesh( forma1, material1 );
 escena1.add(cube);
 
 renderizador.render(escena,camara);
-renderizador.render(escena1,camara);
+
