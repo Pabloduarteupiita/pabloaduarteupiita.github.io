@@ -8,18 +8,18 @@ forma.vertices.push(new THREE.Vector3(-1,1,-1));//5
 forma.vertices.push(new THREE.Vector3(-1,-1,1));//6
 forma.vertices.push(new THREE.Vector3(-1,-1,-1));//7
 
-forma.faces.push(new THREE.Face3(0,1,2)); //cara 0
-forma.faces.push(new THREE.Face3(0,1,4)); //cara 1
-forma.faces.push(new THREE.Face3(1,5,4)); //cara 2
-forma.faces.push(new THREE.Face3(0,2,3)); //cara 3
-forma.faces.push(new THREE.Face3(0,1,2)); //cara 4
-forma.faces.push(new THREE.Face3(2,6,7)); //cara 5
-forma.faces.push(new THREE.Face3(2,3,7)); //cara 6
-forma.faces.push(new THREE.Face3(2,5,7)); //cara 7
-forma.faces.push(new THREE.Face3(3,2,6)); //cara 8
-forma.faces.push(new THREE.Face3(3,6,4)); //cara 9
-forma.faces.push(new THREE.Face3(1,3,7)); //cara 10
-forma.faces.push(new THREE.Face3(1,7,5)); //cara 11
+//forma.faces.push(new THREE.Face3(0,1,2)); //cara 0
+//forma.faces.push(new THREE.Face3(0,1,4)); //cara 1
+//forma.faces.push(new THREE.Face3(1,5,4)); //cara 2
+//forma.faces.push(new THREE.Face3(0,2,3)); //cara 3
+//forma.faces.push(new THREE.Face3(0,1,2)); //cara 4
+//forma.faces.push(new THREE.Face3(2,6,7)); //cara 5
+//forma.faces.push(new THREE.Face3(2,3,7)); //cara 6
+//forma.faces.push(new THREE.Face3(2,5,7)); //cara 7
+//forma.faces.push(new THREE.Face3(3,2,6)); //cara 8
+//forma.faces.push(new THREE.Face3(3,6,4)); //cara 9
+//forma.faces.push(new THREE.Face3(1,3,7)); //cara 10
+//forma.faces.push(new THREE.Face3(1,7,5)); //cara 11
 forma.faces.push(new THREE.Face3(5,4,6)); //cara 10
 forma.faces.push(new THREE.Face3(5,6,7)); //cara 11
 
