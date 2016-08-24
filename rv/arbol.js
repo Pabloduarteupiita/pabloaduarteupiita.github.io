@@ -13,8 +13,8 @@ var circulo = new THREE.Mesh(forma, material);
 escena.add(circulo);
 
 var geometry = new THREE.BoxGeometry( 1, 3 );
-var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
+var material = new THREE.MeshBasicMaterial();
 var cube = new THREE.Mesh( geometry, material );
-scene.add( cube );
+escena.add( cube );
 
 renderizador.render(escena,camara);
