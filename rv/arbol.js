@@ -17,4 +17,6 @@ var forma1 = new THREE.BoxGeometry( 1, 33 );
 var material1 = new THREE.MeshNormalMaterial();
 var cube = new THREE.Mesh( forma1, material1 );
 escena1.add(cube);
+
 renderizador.render(escena,camara);
+renderizador.render(escena1,camara);
