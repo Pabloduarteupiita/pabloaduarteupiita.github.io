@@ -8,10 +8,10 @@ forma.vertices.push(new THREE.Vector3(-1,1,-1));//5
 forma.vertices.push(new THREE.Vector3(-1,-1,1));//6
 forma.vertices.push(new THREE.Vector3(-1,-1,-1));//7
 
-forma.faces.push(new THREE.Face3(0,1,2,3)); //cara 0
-forma.faces.push(new THREE.Face3(0,1,4,5)); //cara 1
-forma.faces.push(new THREE.Face3(2,3,7,6)); //cara 2
-forma.faces.push(new THREE.Face3(0,2,6,4)); //cara 3
+forma.faces.push(new THREE.Face3(0,1,2)); //cara 0
+forma.faces.push(new THREE.Face3(0,1,4)); //cara 1
+forma.faces.push(new THREE.Face3(2,3,7)); //cara 2
+forma.faces.push(new THREE.Face3(0,2,6)); //cara 3
 
 
 forma.computeBoundingSphere();
