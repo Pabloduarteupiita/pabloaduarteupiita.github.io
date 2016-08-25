@@ -8,16 +8,19 @@ forma.vertices.push(new THREE.Vector3(-1,1,-1));//5
 forma.vertices.push(new THREE.Vector3(-1,-1,1));//6
 forma.vertices.push(new THREE.Vector3(-1,-1,-1));//7
 
+forma.faces.push(new THREE.Face3(5,4,6)); //cara 10 ya izq
+forma.faces.push(new THREE.Face3(5,6,7)); //cara 11 ya izq
 forma.faces.push(new THREE.Face3(0,1,2)); //cara 0 ya der
 forma.faces.push(new THREE.Face3(2,1,3)); //cara 1 ya der
 //forma.faces.push(new THREE.Face3(0,4,6)); //cara 2 ya fre
 //forma.faces.push(new THREE.Face3(6,2,0)); //cara 3 ya fre
 //forma.faces.push(new THREE.Face3(4,0,1)); //cara 4 ya arr
 //forma.faces.push(new THREE.Face3(4,1,5)); //cara 5 ya arr
+forma.faces.push(new THREE.Face3(7,3,1)); //cara 6 
+forma.faces.push(new THREE.Face3(5,7,1)); //cara 7
 //forma.faces.push(new THREE.Face3(2,3,7)); //cara 6 
 //forma.faces.push(new THREE.Face3(2,5,7)); //cara 7
-forma.faces.push(new THREE.Face3(5,4,6)); //cara 10 ya izq
-forma.faces.push(new THREE.Face3(5,6,7)); //cara 11 ya izq
+
 
 forma.computeBoundingSphere();
 forma.computeFaceNormals();
