@@ -12,7 +12,7 @@ forma.faces.push(new THREE.Face3(0,1,2)); //cara 0
 forma.faces.push(new THREE.Face3(0,1,3)); //cara 1
 //forma.faces.push(new THREE.Face3(0,4,6)); //cara 2
 //forma.faces.push(new THREE.Face3(6,2,0)); //cara 3
-forma.faces.push(new THREE.Face3(0,4,1)); //cara 4
+//forma.faces.push(new THREE.Face3(0,4,1)); //cara 4
 forma.faces.push(new THREE.Face3(4,1,5)); //cara 5
 //forma.faces.push(new THREE.Face3(2,3,7)); //cara 6
 //forma.faces.push(new THREE.Face3(2,5,7)); //cara 7
