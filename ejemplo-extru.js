@@ -4,7 +4,7 @@ for(var i=0; i<50; i++){
 puntos.push(new THREE.Vector2(Math.sin(i*0.2)*15+50, (i-5)*2))};
 
 var material =new THREE.MeshNormalMaterial();
-var forma = new THREE.ShapeGeometry(figura);
+var forma = new THREE.ShapeGeometry(puntos);
 
 var malla= new THREE.Mesh(forma,material);
 malla.rotateX(Math.PI/4);
