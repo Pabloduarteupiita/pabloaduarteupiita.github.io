@@ -13,7 +13,7 @@ arbolForma.merge(esferaMalla.Geometry,esferaMalla.matrix);
 var material= new THREE.MeshNormalMaterial();
 var arbolMalla= new THREE.Mesh(arbolforma,material);
 
-vas escena= new THREE.Scene();
+var escena= new THREE.Scene();
 escena.add(arbolMalla);
 
 var camara= new THREE.PerspectiveCamera();
