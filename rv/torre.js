@@ -1,4 +1,4 @@
-var p1Forma= new THREE.CylinderGeometry(..7,.7,1);
+var p1Forma= new THREE.CylinderGeometry(.7,.7,1);
 var p2Forma= new THREE.CylinderGeometry(1,1,.5);
 var p2Forma= new THREE.CylinderGeometry(1,1,.5);
 
