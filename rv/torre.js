@@ -1,5 +1,5 @@
-var p1Forma= new THREE.CylinderGeometry(.5,.5,1);
-var p2Forma= new THREE.SphereGeometry(.7,.7,.5);
+var p1Forma= new THREE.CylinderGeometry(.5,.5,5);
+var p2Forma= new THREE.CylinderGeometry(.7,.7,.5);
 
 p2Forma.translate(5,5,5);
 
