@@ -1,12 +1,12 @@
 var figura = new THREE.Shape(); //para figura es el constructor shape
 //figura.moveTo(10,0); //mover a coordenada 10x 10y
-figura.lineTo(20,20); // hacer linea en coordenadas 10x 40x 
+figura.lineTo(15,15); // hacer linea en coordenadas 10x 40x 
 figura.lineTo(40,0);
 figura.lineTo(30,20);
 figura.lineTo(40,30);/////////
-figura.lineTo(30,30);
+figura.lineTo(20,30);
 figura.lineTo(20,40);
-figura.lineTo(10,30);
+figura.lineTo(5,30);
 figura.lineTo(0,30);
 figura.lineTo(10,20);
 figura.lineTo(0,0);
