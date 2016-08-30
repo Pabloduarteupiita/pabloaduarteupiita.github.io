@@ -1,11 +1,15 @@
 var figura = new THREE.Shape(); //para figura es el constructor shape
 //figura.moveTo(10,0); //mover a coordenada 10x 10y
 figura.lineTo(20,20); // hacer linea en coordenadas 10x 40x 
-figura.lineTo(15,55);
-figura.lineTo(10,70);
-figura.lineTo(15,70);
+figura.lineTo(40,0);
+figura.lineTo(30,20);
+figura.lineTo(40,70);/////////
+figura.lineTo(30,70);
 figura.lineTo(20,90);
-figura.lineTo(10,0);
+figura.lineTo(10,70);
+figura.lineTo(0,70);
+figura.lineTo(10,20);
+figura.lineTo(0,0);
 
 var forma = new THREE.ShapeGeometry(figura);
 var malla = new THREE.Mesh(forma);
