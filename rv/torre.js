@@ -1,17 +1,17 @@
-var torreForma= new THREE.CylinderGeometry(.5,.5,1);
-var torreForma1= new THREE.CylinderGeometry(.7,.7,1);
-torreForma1.translate(0,5,0);
+var p1Forma= new THREE.CylinderGeometry(.5,.5,1);
+var p2Forma= new THREE.CylinderGeometry(.7,.7,1);
+p2Forma.translate(0,5,0);
 
-var torreMalla= new THREE.Mesh(torreForma);
-var torreMalla1= new THREE.Mesh(torreForma1);
+var p1Malla= new THREE.Mesh(p1Forma);
+var p2Malla= new THREE.Mesh(p2Forma);
 
 var torreForma= new THREE.Geometry();
 
-torreForma.merge(torreMalla1.geometry,torreMalla.matrix);
-torreForma.merge(torreMalla.geometry,torreMalla1.matrix);
+torreForma.merge(p1Malla.geometry,p1Malla.matrix);
+torreForma.merge(p2Malla.geometry,p2Malla.matrix);
 
 var material= new THREE.MeshNormalMaterial();
-var toreMalla= new THREE.Mesh(torreForma,material);
+var torreMalla= new THREE.Mesh(torreForma,material);
 
 var escena= new THREE.Scene();
 escena.add(torreMalla);
