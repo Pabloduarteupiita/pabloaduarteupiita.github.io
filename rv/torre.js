@@ -1,6 +1,6 @@
 var p1Forma= new THREE.CylinderGeometry(.5,.5,1);
 var p2Forma= new THREE.CylinderGeometry(1,1,.5);
-p2Forma.translate(1,5,0);
+p2Forma.translate(1,1,1);
 
 var p1Malla= new THREE.Mesh(p1Forma);
 var p2Malla= new THREE.Mesh(p2Forma);
