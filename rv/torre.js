@@ -2,8 +2,8 @@ var p1Forma= new THREE.CylinderGeometry(.5,.5,1);
 var p2Forma= new THREE.CylinderGeometry(.7,.7,.5);
 var p3Forma= new THREE.CylinderGeometry(.7,.7,.5);
 
-p2Forma.translate(0,3,3);
-p2Forma.translate(0,-3,3);
+p2Forma.translate(3,3,3);
+p2Forma.translate(3,-3,3);
 
 var p1Malla= new THREE.Mesh(p1Forma);
 var p2Malla= new THREE.Mesh(p2Forma);
