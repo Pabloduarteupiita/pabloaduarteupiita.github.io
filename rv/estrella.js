@@ -6,7 +6,7 @@ figura.lineTo(30,20);//3
 figura.lineTo(40,30);/////////4
 figura.lineTo(30,30);//5
 figura.lineTo(20,45);//6
-figura.lineTo(15,30);//7
+figura.lineTo(10,30);//7
 figura.lineTo(0,30);//8
 figura.lineTo(10,20);//9
 figura.lineTo(0,0);//10
