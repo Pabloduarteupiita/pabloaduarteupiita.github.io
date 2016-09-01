@@ -48,10 +48,10 @@ var pico4Malla= new THREE.Mesh(figura4);
 var escena = new THREE.Scene();
 var picosForma= new THREE.Geometry();
 
-picosForma.merge(pico1.geometry,troncoMalla.matrix);
-picosForma.merge(pico2.geometry,troncoMalla.matrix);
-picosForma.merge(pico3.geometry,troncoMalla.matrix);
-picosForma.merge(pico4.geometry,troncoMalla.matrix);
+picosForma.merge(pico1Malla.geometry,troncoMalla.matrix);
+picosForma.merge(pico2Malla.geometry,troncoMalla.matrix);
+picosForma.merge(pico3Malla.geometry,troncoMalla.matrix);
+picosForma.merge(pico4Malla.geometry,troncoMalla.matrix);
 
 var material= new THREE.MeshNormalMaterial();
 var picosMalla= new THREE.Mesh(arbolForma,material);
