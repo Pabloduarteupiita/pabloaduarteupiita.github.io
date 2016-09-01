@@ -7,8 +7,8 @@ figura1.lineTo(10,10);
 var forma1 = new THREE.ExtrudeGeometry(figura1,{amount:10});
 var material1= new THREE.MeshNormalMaterial();
 var malla1= new THREE.Mesh(forma1,material1);
-malla1.rotateX(Math.PI/2)
-forma1.translate(0,1.5,0);
+//malla1.rotateX(Math.PI/2)
+//forma1.translate(0,1.5,0);
 
 var figura2= new THREE.Shape();
 figura2.moveTo(-10,-10);
@@ -19,8 +19,8 @@ figura2.lineTo(-10,-10);
 var forma2 = new THREE.ExtrudeGeometry(figura2,{amount:10});
 var material2= new THREE.MeshNormalMaterial();
 var malla2= new THREE.Mesh(forma2,material2);
-malla2.rotateX(Math.PI/2)
-forma2.translate(0,1.5,0);
+//malla2.rotateX(Math.PI/2)
+//forma2.translate(0,1.5,0);
 
 var figura3= new THREE.Shape();
 figura3.moveTo(-10,10);
@@ -31,8 +31,8 @@ figura3.lineTo(-10,10);
 var forma3 = new THREE.ExtrudeGeometry(figura3,{amount:10});
 var material3= new THREE.MeshNormalMaterial();
 var malla3= new THREE.Mesh(forma3,material3);
-malla3.rotateX(Math.PI/2)
-forma3.translate(0,1.5,0);
+//malla3.rotateX(Math.PI/2)
+//forma3.translate(0,1.5,0);
 
 var figura4= new THREE.Shape();
 figura4.moveTo(10,-10);
@@ -43,8 +43,8 @@ figura4.lineTo(10,-10);
 var forma4 = new THREE.ExtrudeGeometry(figura4,{amount:10});
 var material4= new THREE.MeshNormalMaterial();
 var malla4= new THREE.Mesh(forma4,material4);
-malla4.rotateX(Math.PI/2)
-forma4.translate(0,1.5,0);
+//malla4.rotateX(Math.PI/2)
+//forma4.translate(0,1.5,0);
 
 
 
