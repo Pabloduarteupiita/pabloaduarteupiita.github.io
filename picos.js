@@ -1,5 +1,4 @@
 var figura1= new THREE.Shape();
-
 figura1.moveTo(10,10);
 figura1.lineTo(30,10);
 figura1.lineTo(30,30);
@@ -41,12 +40,24 @@ var material4= new THREE.MeshNormalMaterial();
 var malla4= new THREE.Mesh(forma4,material4);
 
 
+var pico1Malla= new THREE.Mesh(figura1);
+var pico2Malla= new THREE.Mesh(figura2);
+var pico3Malla= new THREE.Mesh(figura3);
+var pico4Malla= new THREE.Mesh(figura4);
 
 var escena = new THREE.Scene();
-escena.add(malla1);
-escena.add(malla2);
-escena.add(malla3);
-escena.add(malla4);
+var picosForma= new THREE.Geometry();
+
+picosForma.merge(pico1.geometry,troncoMalla.matrix);
+picosForma.merge(pico2.geometry,troncoMalla.matrix);
+picosForma.merge(pico3.geometry,troncoMalla.matrix);
+picosForma.merge(pico4.geometry,troncoMalla.matrix);
+
+var material= new THREE.MeshNormalMaterial();
+var picosMalla= new THREE.Mesh(arbolForma,material);
+
+var escena= new THREE.Scene();
+escena.add(picosMalla);
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=500;
