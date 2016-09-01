@@ -3,7 +3,7 @@ var figura1= new THREE.Shape();
 figura1.moveTo(10,10);
 figura1.lineTo(30,10);
 figura1.lineTo(30,30);
-figura1.lineTo(10,10);
+figura1.lineTo(10,30);
 figura1.lineTo(10,10);
 var forma1 = new THREE.ExtrudeGeometry(figura1,{amount:10});
 var material1= new THREE.MeshNormalMaterial();
@@ -20,14 +20,33 @@ var forma2 = new THREE.ExtrudeGeometry(figura2,{amount:10});
 var material2= new THREE.MeshNormalMaterial();
 var malla2= new THREE.Mesh(forma2,material2);
 
+var figura3= new THREE.Shape();
+figura3.moveTo(-10,10);
+figura3.lineTo(-30,10);
+figura3.lineTo(-30,30);
+figura3.lineTo(-10,30);
+figura3.lineTo(-10,10);
+var forma3 = new THREE.ExtrudeGeometry(figura3,{amount:10});
+var material3= new THREE.MeshNormalMaterial();
+var malla3= new THREE.Mesh(forma3,material3);
 
-
+var figura4= new THREE.Shape();
+figura4.moveTo(10,-10);
+figura4.lineTo(30,-10);
+figura4.lineTo(30,-30);
+figura4.lineTo(10,-30);
+figura4.lineTo(10,-10);
+var forma4 = new THREE.ExtrudeGeometry(figura4,{amount:10});
+var material4= new THREE.MeshNormalMaterial();
+var malla4= new THREE.Mesh(forma4,material4);
 
 
 
 var escena = new THREE.Scene();
 escena.add(malla1);
-//escena.add(malla2);
+escena.add(malla2);
+escena.add(malla3);
+escena.add(malla4);
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=500;
