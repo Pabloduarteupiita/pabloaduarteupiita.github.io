@@ -20,7 +20,7 @@ var forma2 = new THREE.ExtrudeGeometry(figura2,{amount:10});
 var material2= new THREE.MeshNormalMaterial();
 var malla2= new THREE.Mesh(forma2,material2);
 malla2.rotateX(Math.PI/2)
-forma.translate(0,1.5,0);
+forma2.translate(0,1.5,0);
 
 var figura3= new THREE.Shape();
 figura3.moveTo(-10,10);
