@@ -1,4 +1,4 @@
-var figura= new THREE.Shape();
+var figura1= new THREE.Shape();
 
 figura1.moveTo(10,10);
 figura1.lineTo(30,10);
@@ -10,6 +10,7 @@ var material= new THREE.MeshNormalMaterial();
 var malla1= new THREE.Mesh(forma1,material1);
 malla1.rotateX(Math.PI/4)
 
+var figura2= new THREE.Shape();
 figura2.moveTo(-10,-10);
 figura2.lineTo(-10,-30);
 figura2.lineTo(-30,-30);
