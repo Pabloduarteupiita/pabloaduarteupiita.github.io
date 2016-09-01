@@ -5,17 +5,24 @@ figura1.lineTo(30,10);
 figura1.lineTo(30,30);
 figura1.lineTo(10,10);
 figura1.lineTo(10,10);
-
-
-
-
-
-
-var forma = new THREE.ExtrudeGeometry(figura,{amount:10});
-
+var forma1 = new THREE.ExtrudeGeometry(figura1,{amount:10});
 var material= new THREE.MeshNormalMaterial();
-var malla= new THREE.Mesh(forma,material);
-malla.rotateX(Math.PI/4)
+var malla1= new THREE.Mesh(forma1,material1);
+malla1.rotateX(Math.PI/4)
+
+figura2.moveTo(-10,-10);
+figura2.lineTo(-10,-30);
+figura2.lineTo(-30,-30);
+figura2.lineTo(-30,-10);
+figura2.lineTo(-10,-10);
+var forma2 = new THREE.ExtrudeGeometry(figura2,{amount:10});
+var material2= new THREE.MeshNormalMaterial();
+var malla2= new THREE.Mesh(forma2,material2);
+malla2.rotateX(Math.PI/4)
+
+
+
+
 
 var escena = new THREE.Scene();
 escena.add(malla);
