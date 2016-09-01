@@ -64,9 +64,9 @@ var p3Malla= new THREE.Mesh(p3Forma);
 
 var torreForma= new THREE.Geometry();
 
-torreForma.merge(p1Malla.geometry,p1Malla.matrix);
-torreForma.merge(p2Malla.geometry,p2Malla.matrix);
-torreForma.merge(p3Malla.geometry,p3Malla.matrix);
+//torreForma.merge(p1Malla.geometry,p1Malla.matrix);
+//torreForma.merge(p2Malla.geometry,p2Malla.matrix);
+//torreForma.merge(p3Malla.geometry,p3Malla.matrix);
 torreForma.merge(malla1.geometry,malla1.matrix);
 torreForma.merge(malla2.geometry,malla2.matrix);
 torreForma.merge(malla3.geometry,malla3.matrix);
