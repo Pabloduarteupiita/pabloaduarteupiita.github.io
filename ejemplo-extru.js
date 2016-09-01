@@ -8,7 +8,7 @@ figura.lineTo(10,10);
 var forma = new THREE.ExtrudeGeometry(figura,{amount:10});
 
 var forma= new THREE.MeshNormalMaterial();
-var malla= new THREE.Mesh(forma,meterial);
+var malla= new THREE.Mesh(forma,material);
 malla.rotateX(Math.PI/4)
 
 var escena = new THREE.Scene();
