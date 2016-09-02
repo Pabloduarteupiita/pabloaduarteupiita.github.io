@@ -14,7 +14,7 @@ p3Forma.translate(0,-.7,0);
 p4Forma.translate(.5,1,.5);
 p5Forma.translate(.5,1,-.5);
 p6Forma.translate(-.5,1,.5);
-p7Forma.translate(-.5,1,-.5);
+p7Forma.translate(-.2,1,-.2);
 
 
 var p1Malla= new THREE.Mesh(p1Forma);
