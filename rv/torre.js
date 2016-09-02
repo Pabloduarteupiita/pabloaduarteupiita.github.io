@@ -3,7 +3,7 @@ var p1Forma= new THREE.CylinderGeometry(.7,.7,1);
 var p2Forma= new THREE.CylinderGeometry(1,1,.3);
 var p3Forma= new THREE.CylinderGeometry(1,1,.6);
 
-var p4Forma= new THREE.CylinderGeometry(.2,0,..1);
+var p4Forma= new THREE.CylinderGeometry(.2,0,.1);
 var p5Forma= new THREE.CylinderGeometry(.2,0,.1);
 var p6Forma= new THREE.CylinderGeometry(.2,0,.1);
 var p7Forma= new THREE.CylinderGeometry(.2,0,.1);
