@@ -14,7 +14,7 @@ p3Forma.translate(0,-.7,0);
 p4Forma.translate(.5,1,.5);
 p5Forma.translate(.5,1,-.5);
 p6Forma.translate(-.5,1,.5);
-p7Forma.translate(-.5,1,-5);
+p7Forma.translate(-.5,1,-.5);
 
 
 var p1Malla= new THREE.Mesh(p1Forma);
@@ -46,7 +46,7 @@ escena.add(torreMalla);
 var camara= new THREE.PerspectiveCamera();
 
 camara.position.y=2;
-camara.position.z=5;
+camara.position.z=8;
 
 renderizador= new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
