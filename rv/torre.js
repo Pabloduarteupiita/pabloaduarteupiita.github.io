@@ -21,17 +21,20 @@ var p1Malla= new THREE.Mesh(p1Forma);
 var p2Malla= new THREE.Mesh(p2Forma);
 var p3Malla= new THREE.Mesh(p3Forma);
 
-var p3Malla= new THREE.Mesh(p3Forma);
-var p3Malla= new THREE.Mesh(p3Forma);
-var p3Malla= new THREE.Mesh(p3Forma);
-var p3Malla= new THREE.Mesh(p3Forma);
+var p4Malla= new THREE.Mesh(p4Forma);
+var p5Malla= new THREE.Mesh(p5Forma);
+var p6Malla= new THREE.Mesh(p6Forma);
+var p7Malla= new THREE.Mesh(p7Forma);
 
 var torreForma= new THREE.Geometry();
 
 torreForma.merge(p1Malla.geometry,p1Malla.matrix);
 torreForma.merge(p2Malla.geometry,p2Malla.matrix);
 torreForma.merge(p3Malla.geometry,p3Malla.matrix);
-torreForma.merge(p3Malla.geometry,p3Malla.matrix);
+torreForma.merge(p4Malla.geometry,p4Malla.matrix);
+torreForma.merge(p5Malla.geometry,p5Malla.matrix);
+torreForma.merge(p6Malla.geometry,p6Malla.matrix);
+torreForma.merge(p7Malla.geometry,p7Malla.matrix);
 
 var material= new THREE.MeshNormalMaterial();
 var torreMalla= new THREE.Mesh(torreForma,material);
