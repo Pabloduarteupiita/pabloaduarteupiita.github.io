@@ -3,18 +3,18 @@ var p1Forma= new THREE.CylinderGeometry(.7,.7,1);
 var p2Forma= new THREE.CylinderGeometry(1,1,.3);
 var p3Forma= new THREE.CylinderGeometry(1,1,.6);
 
-var p4Forma= new THREE.CylinderGeometry(0,.2,.1);
-var p5Forma= new THREE.CylinderGeometry(0,.2,.1);
-var p6Forma= new THREE.CylinderGeometry(0,.2,.1);
-var p7Forma= new THREE.CylinderGeometry(0,.2,.1);
+var p4Forma= new THREE.CylinderGeometry(0,.2,.2);
+var p5Forma= new THREE.CylinderGeometry(0,.2,.2);
+var p6Forma= new THREE.CylinderGeometry(0,.2,.2);
+var p7Forma= new THREE.CylinderGeometry(0,.2,.2);
 
 p2Forma.translate(0,.7,0);
 p3Forma.translate(0,-.7,0);
 
-p4Forma.translate(.7,.9,.7);
-p5Forma.translate(.7,.9,-.7);
-p6Forma.translate(-.7,.9,.7);
-p7Forma.translate(-.7,.9,-7);
+p4Forma.translate(.6,.9,.6);
+p5Forma.translate(.6,.9,-.6);
+p6Forma.translate(-.6,.9,.6);
+p7Forma.translate(-.6,.9,-6);
 
 
 var p1Malla= new THREE.Mesh(p1Forma);
