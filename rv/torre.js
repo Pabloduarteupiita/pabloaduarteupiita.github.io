@@ -11,10 +11,10 @@ var p7Forma= new THREE.CylinderGeometry(0,.2,.1);
 p2Forma.translate(0,.7,0);
 p3Forma.translate(0,-.7,0);
 
-p4Forma.translate(.8,1,.8);
-p5Forma.translate(.8,1,-.8);
-p6Forma.translate(-.8,1,.8);
-p7Forma.translate(-.8,1,-8);
+p4Forma.translate(.7,1,.7);
+p5Forma.translate(.7,1,-.7);
+p6Forma.translate(-.7,1,.7);
+p7Forma.translate(-.7,1,-7);
 
 
 var p1Malla= new THREE.Mesh(p1Forma);
