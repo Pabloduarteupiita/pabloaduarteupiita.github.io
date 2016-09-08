@@ -4,7 +4,7 @@
 
 var geometry = new THREE.Geometry();
  for ( var i = 0; i < indices.length; i += 3 ) {
-                                var cubo1Forma(i,j)= new THREE.BoxGeometry(1,1,1);
+  cubo1Forma(i,j)= new THREE.BoxGeometry(1,1,1);
                         }
 
 
