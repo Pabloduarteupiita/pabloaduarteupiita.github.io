@@ -1,4 +1,5 @@
 var cubo1Forma= new THREE.BoxGeometry(1,1,1);
+var cubo2Forma= new THREE.BoxGeometry(1,1,1);
 cubo1Forma.translate(0,0,0);
 cubo2Forma.translate(1,0,0);
 
