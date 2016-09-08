@@ -3,7 +3,7 @@
 
 
 var geometry = new THREE.Geometry();
- for ( var i = 0; i < indices.length; i += 3 ) {
+ for ( var i = 0; i < 8; i += 1 ) {
   cubo1Forma(i,j)= new THREE.BoxGeometry(1,1,1);
                         }
 
