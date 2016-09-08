@@ -2,7 +2,7 @@ var cubo1Forma= new THREE.BoxGeometry(1,1,1);
 var cubo2Forma= new THREE.BoxGeometry(1,1,1);
 
 var material1 = new THREE.MeshBasicMaterial({color: 0xffffff});
-var material2 = new THREE.MeshBasicMaterial({color: 0x996600});
+var material2 = new THREE.MeshBasicMaterial({color: 0x808080});
 
 var cube1 = new THREE.Mesh( cubo1Forma, material1 );
 var cube2 = new THREE.Mesh( cubo2Forma, material2 );
