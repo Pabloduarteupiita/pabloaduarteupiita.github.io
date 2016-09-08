@@ -7,8 +7,8 @@ var tablero1Malla= new THREE.Mesh(cubo1Forma);
 var tablero2Malla= new THREE.Mesh(cubo2Forma);
 
 var tableroForma= new THREE.Geometry();
-tableroForma.merge(tableroMalla1.geometry,tablero1Malla.matrix);
-tableroForma.merge(tableroMalla2.geometry,tablero2Malla.matrix);
+tableroForma.merge(tablero1Malla.geometry,tablero1Malla.matrix);
+tableroForma.merge(tablero2Malla.geometry,tablero2Malla.matrix);
 
 var material= new THREE.MeshNormalMaterial();
 var tableroMalla= new THREE.Mesh(tableroForma,material);
