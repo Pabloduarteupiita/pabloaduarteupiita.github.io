@@ -1,18 +1,32 @@
-var cubo1Forma= new THREE.BoxGeometry(1,1,1);
-var cubo2Forma= new THREE.BoxGeometry(1,1,1);
+//var cubo1Forma= new THREE.BoxGeometry(1,1,1);
+//var cubo2Forma= new THREE.BoxGeometry(1,1,1);
+
+var size = 500, step = 50;
+
+var geometry = new THREE.Geometry();
+for ( var i = - size; i <= size; i += step ) {
+
+					geometry.vertices.push( THREE.BoxGeometry(1,1,1)( - size, 0, i ) );
+					geometry.vertices.push( THREE.BoxGeometry(1,1,1)(   size, 0, i ) );
+
+					geometry.vertices.push( THREE.BoxGeometry(1,1,1)( i, 0, - size ) );
+					geometry.vertices.push( THREE.BoxGeometry(1,1,1)( i, 0,   size ) );
+
+		}
+
 
 var material1 = new THREE.MeshBasicMaterial({color: 0xffffff});
 var material2 = new THREE.MeshBasicMaterial({color: 0x808080});
 
-var cube1 = new THREE.Mesh( cubo1Forma, material1 );
-var cube2 = new THREE.Mesh( cubo2Forma, material2 );
+var cube1 = new THREE.Mesh( geometry, material1 );
+//var cube2 = new THREE.Mesh( cubo2Forma, material2 );
 
 cubo1Forma.translate(0,0,0);
-cubo2Forma.translate(1,0,0);
+//cubo2Forma.translate(1,0,0);
 
 var escena= new THREE.Scene();
 escena.add(cube1);
-escena.add(cube2);
+//escena.add(cube2);
 
 var camara= new THREE.PerspectiveCamera();
 camara.position.z=5;
