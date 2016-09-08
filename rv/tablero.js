@@ -1,11 +1,13 @@
 var cubo1Forma= new THREE.BoxGeometry(1,1,1);
 cubo1Forma.translate(0,0,0);
+cubo2Forma.translate(1,0,0);
 
-var tableroMalla= new THREE.Mesh(cubo1Forma);
+var tablero1Malla= new THREE.Mesh(cubo1Forma);
+var tablero2Malla= new THREE.Mesh(cubo2Forma);
 
 var tableroForma= new THREE.Geometry();
-tableroForma.merge(tableroMalla.geometry,tableroMalla.matrix);
-
+tableroForma.merge(tableroMalla1.geometry,tablero1Malla.matrix);
+tableroForma.merge(tableroMalla2.geometry,tablero2Malla.matrix);
 
 var material= new THREE.MeshNormalMaterial();
 var tableroMalla= new THREE.Mesh(tableroForma,material);
