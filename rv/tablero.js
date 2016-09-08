@@ -1,5 +1,5 @@
 var cubo1Forma= new THREE.BoxGeometry(1,1,1);
-cuboForma.translate(1,0,0);
+cubo1Forma.translate(1,0,0);
 
 var tableroMalla= new THREE.Mesh(cubo1Forma);
 
