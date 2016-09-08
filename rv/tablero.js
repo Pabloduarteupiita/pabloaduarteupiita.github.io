@@ -6,11 +6,11 @@ var size = 500, step = 50;
 var geometry = new THREE.Geometry();
 for ( var i = - size; i <= size; i += step ) {
 
-					geometry.vertices.push( THREE.BoxGeometry(1,1,1)( - size, 0, i ) );
-					geometry.vertices.push( THREE.BoxGeometry(1,1,1)(   size, 0, i ) );
+					geometry.vertices.push( THREE.Vector3(1,1,1)( - size, 0, i ) );
+					geometry.vertices.push( THREE.Vector3(1,1,1)(   size, 0, i ) );
 
-					geometry.vertices.push( THREE.BoxGeometry(1,1,1)( i, 0, - size ) );
-					geometry.vertices.push( THREE.BoxGeometry(1,1,1)( i, 0,   size ) );
+					geometry.vertices.push( THREE.Vector3(1,1,1)( i, 0, - size ) );
+					geometry.vertices.push( THREE.Vector3(1,1,1)( i, 0,   size ) );
 
 		}
 
