@@ -1,5 +1,5 @@
 var cubo1Forma= new THREE.BoxGeometry(1,1,1);
-cubo1Forma.translate(1,0,0);
+cubo1Forma.translate(0,0,0);
 
 var tableroMalla= new THREE.Mesh(cubo1Forma);
 
@@ -15,6 +15,8 @@ escena.add(tableroMalla);
 
 var camara= new THREE.PerspectiveCamera();
 camara.position.z=5;
+camara.position.x=5;
+camara.position.y=5;
 
 renderizador= new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
