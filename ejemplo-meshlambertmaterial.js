@@ -14,7 +14,7 @@ escena.add(luzPuntual);
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=5;
 
-var lienzo=document.getElementaryId("luzPuntual");
+var lienzo=document.getElementId("luzPuntual");
 var renderizador= new THREE.WebGLRenderer({canvas:lienzo,antialias:true});
 
 renderizador.setsize(600,600);
