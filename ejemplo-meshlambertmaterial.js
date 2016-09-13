@@ -11,7 +11,7 @@ var escena= new THREE.Scene();
 escena.add(malla);
 escena.add(luzPuntual);
 
-var camara=new THREE.PespectiveCamera();
+var camara=new THREE.PerspectiveCamera();
 camara.position.z=5;
 
 var lienzo=document.getElementaryId("luzPuntual");
