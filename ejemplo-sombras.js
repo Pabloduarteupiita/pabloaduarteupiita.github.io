@@ -17,10 +17,10 @@ camara.position.z=15;
 camara.position.z=5;
 
 var lienzo= document.getElementById("LuzSinSombras");
+
 var renderizador= new THREE.WebGLRenderer({canvas;lienzo,antialias:True});
 renderizador.setSize(600,600);
 renderizador.shadowmapEnabled=true;
 malla.castShadow= true;
 iluminacion.castShadow=true; 
 renderizador.render(escena,camara);
-
