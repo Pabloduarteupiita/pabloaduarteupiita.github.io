@@ -16,6 +16,7 @@ var geometry = new THREE.Geometry();
 
 var material = new THREE.LineBasicMaterial( { color: 0x000000, opacity: 0.2, transparent: true } );
 var line = new THREE.LineSegments( geometry, material );
+var scene= new THREE.Scene();
 scene.add( line );
 
 //var material1 = new THREE.MeshBasicMaterial({color: 0xffffff});
