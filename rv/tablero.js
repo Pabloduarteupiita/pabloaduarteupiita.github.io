@@ -32,8 +32,11 @@ scene.add( line );
 //escena.add(cube1);
 //escena.add(cube2);
 
-var camara= new THREE.PerspectiveCamera();
-camara.position.z=5;
+//var camara= new THREE.PerspectiveCamera();
+//camara.position.z=5;
+camara = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 10000 );
+				camara.position.set( 500, 800, 1300 );
+				camara.lookAt( new THREE.Vector3() );
 renderizador= new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
