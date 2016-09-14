@@ -20,7 +20,7 @@ var lienzo= document.getElementById("LuzSinSombras");
 
 var renderizador= new THREE.WebGLRenderer({canvas:lienzo,antialias:true});
 renderizador.setSize(window.innerHeight*.95, window.innerHeight*.95);
-
+///
 renderizador.setSize(600,600);
 renderizador.shadowmapEnabled=true;
 malla.castShadow= true;
