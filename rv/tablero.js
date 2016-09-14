@@ -15,7 +15,7 @@ var geometry = new THREE.Geometry();
 				}
 
 var material = new THREE.LineBasicMaterial( { color: 0xffffff} );
-var cubeline = new THREE.Mesh( geometry, material );
+var line = new THREE.Mesh( geometry, material );
 var scene= new THREE.Scene();
 scene.add( line );
 
