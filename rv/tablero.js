@@ -34,8 +34,10 @@ scene.add( line );
 
 //var camara= new THREE.PerspectiveCamera();
 //camara.position.z=5;
-camara = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 10000 );
-				camara.position.set( 5, 0, 0 );
+var camara= new THREE.PerspectiveCamera();
+
+camara.position.y=2;
+camara.position.z=8;
 				
 renderizador= new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
