@@ -37,4 +37,4 @@ camara.position.z=5;
 renderizador= new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
-renderizador.render(escena,camara)
+renderizador.render(scene,camara)
