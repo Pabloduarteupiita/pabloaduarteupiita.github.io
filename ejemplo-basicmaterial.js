@@ -16,3 +16,4 @@ renderizador.render(escena,camara);
 
 <canvas id="basicMaterial"=width="600" height="600"></canvas>
 <script src="ejemplo-basicMaterial.js"></script>
+ 
