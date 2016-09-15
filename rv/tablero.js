@@ -1,16 +1,16 @@
 //var cubo1Forma(i,j)= new THREE.BoxGeometry(1,1,1);
 //var cubo2Forma= new THREE.BoxGeometry(1,1,1);
 
-var size = 1, step = 1;
+var size = 8, step = 1;
 var geometry = new THREE.Geometry();
 
 				for ( var i = - size; i <= size; i += step ) {
 
-					geometry.vertices.push( new THREE.BoxGeometry( - size, 0, i ) );
-					geometry.vertices.push( new THREE.BoxGeometry(   size, 0, i ) );
+					geometry.vertices.push( new THREE.Vector3( - size, 0, i ) );
+					geometry.vertices.push( new THREE.Vector3(   size, 0, i ) );
 
-					geometry.vertices.push( new THREE.BoxGeometry( i, 0, - size ) );
-					geometry.vertices.push( new THREE.BoxGeometry( i, 0,   size ) );
+					geometry.vertices.push( new THREE.Vector3( i, 0, - size ) );
+					geometry.vertices.push( new THREE.Vector3( i, 0,   size ) );
 
 				}
 
