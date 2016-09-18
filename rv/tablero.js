@@ -3,7 +3,6 @@ var cubo2Forma= new THREE.BoxGeometry(1,1,1);
 ///
 var size = 64, step = 1;
 var geometry = new THREE.Geometry();
-
 				for ( var i = - size; i <= size; i += step ) {
 
 					geometry.vertices.push( new THREE.BoxGeometry( - size, 0, i ) );
@@ -12,7 +11,6 @@ var geometry = new THREE.Geometry();
 					geometry.vertices.push( new THREE.BoxGeometry( i, 0, - size ) );
 					geometry.vertices.push( new THREE.BoxGeometry( i, 0,   size ) );
 				}
-
 var material = new THREE.LineBasicMaterial( { color: 0x808080} );
 var line = new THREE.Mesh( geometry, material );
 var scene= new THREE.Scene();
@@ -26,7 +24,7 @@ var cube2 = new THREE.Mesh( cubo2Forma, material2 );
 
 //cubo1Forma.translate(0,0,0);
 cubo2Forma.translate(1,0,0);
-line.translate(0,0,0)
+line.translateOnAxis( x, 1)
 //var escena= new THREE.Scene();
 //escena.add(cube1);
 //escena.add(cube2);
