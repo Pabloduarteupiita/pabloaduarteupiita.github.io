@@ -284,16 +284,14 @@ blancos.merge(cubo59m.geometry,cubo59m.matrix);
 blancos.merge(cubo61m.geometry,cubo61m.matrix);
 blancos.merge(cubo63m.geometry,cubo63m.matrix);
 
-
-
-var material1 = new THREE.MeshBasicMaterial({color: 0x808080});
+var material1 = new THREE.MeshBasicMaterial({color: 0x868484});
 var material2 = new THREE.MeshBasicMaterial({color: 0xFFFFFF});
-
 
 var grisesmalla= new THREE.Mesh(grises,material1);
 var blancosmalla= new THREE.Mesh(blancos,material2);
-var escena= new THREE.Scene();
 
+
+var escena= new THREE.Scene();
 escena.add(blancosmalla);
 escena.add(grisesmalla);
 
