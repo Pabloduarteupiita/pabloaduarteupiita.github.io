@@ -6,11 +6,11 @@ var geometry = new THREE.Geometry();
 
 				for ( var i = - size; i <= size; i += step ) {
 
-					geometry.vertices.push( new THREE.BoxGeometry(1,1,1)( - size, 0, i ) );
-					geometry.vertices.push( new THREE.BoxGeometry(1,1,1)(   size, 0, i ) );
+					geometry.vertices.push( new THREE.BoxGeometry( - size, 0, i ) );
+					geometry.vertices.push( new THREE.BoxGeometry(   size, 0, i ) );
 
-					geometry.vertices.push( new THREE.BoxGeometry(1,1,1)( i, 0, - size ) );
-					geometry.vertices.push( new THREE.BoxGeometry(1,1,1)( i, 0,   size ) );
+					geometry.vertices.push( new THREE.BoxGeometry( i, 0, - size ) );
+					geometry.vertices.push( new THREE.BoxGeometry( i, 0,   size ) );
 				}
 
 var material = new THREE.LineBasicMaterial( { color: 0x808080} );
