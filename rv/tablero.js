@@ -88,7 +88,7 @@ cubo7.translate(6,0,0);
 cubo8.translate(7,0,0);
 
 cubo9.translate(0,1,0);
-cubo1.translate(1,1,0);
+cubo11.translate(1,1,0);
 cubo10.translate(2,1,0);
 cubo12.translate(3,1,0);
 cubo13.translate(4,1,0);
