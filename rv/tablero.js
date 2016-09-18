@@ -333,17 +333,22 @@ torreForma.merge(p7Malla.geometry,p7Malla.matrix);
 var material= new THREE.MeshNormalMaterial();
 var torreMalla= new THREE.Mesh(torreForma,material);
 torreMalla.rotateX(Math.PI);
+torreMalla.rotateY(Math.PI/4);
+torreMalla.rotateY(Math.PI/4);
 //////////////////////////////
 var escena= new THREE.Scene();
 escena.add(blancosmalla);
 escena.add(grisesmalla);
 escena.add(torreMalla);
 ////////////////////////////////////CAMARA
-var campoVision= 45; //grados
-var relacionAspecto=window.innerWidth/window.innerHeight;
-var planoCercano=1;
-var planoLejano=1000;
-var camara= new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercano,planoLejano)
+var camara= new THREE.OrthographicCamera();
+camara.left=window.innerWidth/-2;
+camara.right=window.innerWidth/2;
+camara.top=window.innerHeight/2;
+camara.bottom=window.innerHeight/-2;
+camara.near=0.1;
+camara.far=1000;
+camara.updateProjectionMatrix();
 camara.position.z=10;
 /////////////////////////////
 renderizador= new THREE.WebGLRenderer();
