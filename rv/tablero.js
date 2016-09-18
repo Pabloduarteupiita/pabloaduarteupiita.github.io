@@ -270,8 +270,9 @@ var material2 = new THREE.MeshBasicMaterial({color: 0xffffff});
 var grisesmalla= new THREE.Mesh(grises,material1);
 var blancosmalla= new THREE.Mesh(blancos,material2);
 var escena= new THREE.Scene();
-escena.add(grisesmalla);
+
 escena.add(blancosmalla);
+escena.add(grisesmalla);
 
 var camara= new THREE.PerspectiveCamera();
 camara.position.z=20;
