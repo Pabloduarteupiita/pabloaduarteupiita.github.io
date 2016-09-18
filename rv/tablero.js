@@ -251,7 +251,39 @@ grises.merge(cubo64m.geometry,cubo64m.matrix);
 
 
 var blancos= new THREE.Geometry();
-grises.merge(cubo1m.geometry,cubo1m.matrix);
+grises.merge(cubo2m.geometry,cubo2m.matrix);
+grises.merge(cubo4m.geometry,cubo4m.matrix);
+grises.merge(cubo6m.geometry,cubo6m.matrix);
+grises.merge(cubo8m.geometry,cubo8m.matrix);
+grises.merge(cubo9m.geometry,cubo9m.matrix);
+grises.merge(cubo11m.geometry,cubo11m.matrix);
+grises.merge(cubo13m.geometry,cubo13m.matrix);
+grises.merge(cubo15m.geometry,cubom15.matrix);
+grises.merge(cubo18m.geometry,cubom18.matrix);
+grises.merge(cubo20m.geometry,cubo20m.matrix);
+grises.merge(cubo22m.geometry,cubo22m.matrix);
+grises.merge(cubo24m.geometry,cubo24m.matrix);
+grises.merge(cubo25m.geometry,cubo25m.matrix);
+grises.merge(cubo27m.geometry,cubo27m.matrix);
+grises.merge(cubo29m.geometry,cubo29m.matrix);
+grises.merge(cubo31m.geometry,cubo31m.matrix);
+grises.merge(cubo34m.geometry,cubo34m.matrix);
+grises.merge(cubo36m.geometry,cubom36.matrix);
+grises.merge(cubo38m.geometry,cubom38.matrix);
+grises.merge(cubo40m.geometry,cubom40.matrix);
+grises.merge(cubo41m.geometry,cubom41.matrix);
+grises.merge(cubo43m.geometry,cubom43.matrix);
+grises.merge(cubo45m.geometry,cubom45.matrix);
+grises.merge(cubo47m.geometry,cubom47.matrix);
+grises.merge(cubo50m.geometry,cubom50.matrix);
+grises.merge(cubo52m.geometry,cubom52.matrix);
+grises.merge(cubo54m.geometry,cubom54.matrix);
+grises.merge(cubo56m.geometry,cubom56.matrix);
+grises.merge(cubo57m.geometry,cubom57.matrix);
+grises.merge(cubo59m.geometry,cubom59.matrix);
+grises.merge(cubo61m.geometry,cubom61.matrix);
+grises.merge(cubo63m.geometry,cubom63.matrix);
+
 
 
 var material1 = new THREE.MeshBasicMaterial({color: 0x808080});
@@ -263,7 +295,7 @@ var blancosmalla= new THREE.Mesh(blancos,material2);
 var escena= new THREE.Scene();
 
 escena.add(blancosmalla);
-escena.add(grisesmalla);
+//escena.add(grisesmalla);
 
 var camara= new THREE.PerspectiveCamera();
 camara.position.z=20;
