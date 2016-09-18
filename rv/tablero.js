@@ -340,15 +340,14 @@ escena.add(blancosmalla);
 escena.add(grisesmalla);
 escena.add(torreMalla);
 ////////////////////////////////////CAMARA
-var camara= new THREE.OrthographicCamera();
-camara.left=window.innerWidth/-2;
-camara.right=window.innerWidth/2;
-camara.top=window.innerHeight/2;
-camara.bottom=window.innerHeight/-2;
-camara.near=0.1;
-camara.far=1000;
-camara.updateProjectionMatrix();
-camara.position.z=10;
+var campoVision= 45; //grados
+var relacionAspecto=window.innerWidth/window.innerHeight;
+var planoCercano=1;
+var planoLejano=1000;
+var camara= new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercano,planoLejano)
+
+camara.position.z=15;
+
 
 /////////////////////////////
 renderizador= new THREE.WebGLRenderer();
