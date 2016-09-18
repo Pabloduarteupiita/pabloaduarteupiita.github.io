@@ -292,22 +292,22 @@ var blancosmalla= new THREE.Mesh(blancos,material2);
 
 ///////////////////////////////////TORRE
 
-var p1Forma= new THREE.CylinderGeometry(.7,.7,1);
-var p2Forma= new THREE.CylinderGeometry(1,1,.3);
-var p3Forma= new THREE.CylinderGeometry(.8,1,.6);
+var p1Forma= new THREE.CylinderGeometry(.30,.30,1);
+var p2Forma= new THREE.CylinderGeometry(.5,.5,.3);
+var p3Forma= new THREE.CylinderGeometry(.4,.5,.6);
 
-var p4Forma= new THREE.CylinderGeometry(0,.2,.2);
-var p5Forma= new THREE.CylinderGeometry(0,.2,.2);
-var p6Forma= new THREE.CylinderGeometry(0,.2,.2);
-var p7Forma= new THREE.CylinderGeometry(0,.2,.2);
+var p4Forma= new THREE.CylinderGeometry(0,.1,.2);
+var p5Forma= new THREE.CylinderGeometry(0,.1,.2);
+var p6Forma= new THREE.CylinderGeometry(0,.1,.2);
+var p7Forma= new THREE.CylinderGeometry(0,.1,.2);
 
-p2Forma.translate(1,.5,1);
-p3Forma.translate(1,-.5,1);
+p2Forma.translate(0,.7,0);
+p3Forma.translate(0,-.7,0);
+p4Forma.translate(.5,1,.5);
+p5Forma.translate(.5,1,-.5);
+p6Forma.translate(-.5,1,.5);
+p7Forma.translate(-.2,1,-.2);
 
-p4Forma.translate(.5,1,1.5);
-p5Forma.translate(.5,1,1.5);
-p6Forma.translate(-.5,1,1.5);
-p7Forma.translate(-.2,1,.8);
 
 
 var p1Malla= new THREE.Mesh(p1Forma);
@@ -333,6 +333,7 @@ torreForma.merge(p7Malla.geometry,p7Malla.matrix);
 var material= new THREE.MeshNormalMaterial();
 var torreMalla= new THREE.Mesh(torreForma,material);
 torreMalla.rotateX(Math.PI/4);
+torreMalla.translate(.5,.5,1)
 //////////////////////////////
 var escena= new THREE.Scene();
 escena.add(blancosmalla);
