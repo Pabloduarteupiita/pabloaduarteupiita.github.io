@@ -287,7 +287,7 @@ grises.merge(cubo63m.geometry,cubo63m.matrix);
 
 
 var material1 = new THREE.MeshBasicMaterial({color: 0x808080});
-var material2 = new THREE.MeshBasicMaterial({color: 0xffffff});
+var material2 = new THREE.MeshBasicMaterial({color: 0x809090});
 
 
 var grisesmalla= new THREE.Mesh(grises,material1);
