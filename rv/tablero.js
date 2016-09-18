@@ -114,15 +114,6 @@ cubo30.translate(5,3,0);
 cubo31.translate(6,3,0);
 cubo32.translate(7,3,0);
 
-cubo25.translate(0,4,0);
-cubo26.translate(1,4,0);
-cubo27.translate(2,4,0);
-cubo28.translate(3,4,0);
-cubo29.translate(4,4,0);
-cubo30.translate(5,4,0);
-cubo31.translate(6,4,0);
-cubo32.translate(7,4,0);
-
 cubo33.translate(0,5,0);
 cubo34.translate(1,5,0);
 cubo35.translate(2,5,0);
