@@ -1,7 +1,7 @@
 //var cubo1Forma(i,j)= new THREE.BoxGeometry(1,1,1);
 var cubo2Forma= new THREE.BoxGeometry(1,1,1);
 ///
-var size = 8, step = 1;
+var size = 64, step = 1;
 var geometry = new THREE.Geometry();
 
 				for ( var i = - size; i <= size; i += step ) {
