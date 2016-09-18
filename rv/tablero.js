@@ -270,7 +270,7 @@ escena.add(grisesmalla);
 
 
 var camara= new THREE.PerspectiveCamera();
-Camara.position.z=5;
+camara.position.z=5;
 				
 renderizador= new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
