@@ -305,10 +305,10 @@ p1Forma.translate(.1,1,0);
 p2Forma.translate(.1,1,0);
 p3Forma.translate(.1,.3,0);
 
-p4Forma.translate(.4,.7,.3);
-p5Forma.translate(.4,.7,-.3);
-p6Forma.translate(.8,.7,.3);
-p7Forma.translate(.8,.7,-.3);
+p4Forma.translate(.1,.7,.3);
+p5Forma.translate(.1,.7,-.3);
+p6Forma.translate(.3,.7,.3);
+p7Forma.translate(.3,.7,-.3);
 
 var p1Malla= new THREE.Mesh(p1Forma);
 var p2Malla= new THREE.Mesh(p2Forma);
