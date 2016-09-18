@@ -346,9 +346,9 @@ camara.right=window.innerWidth/2;
 camara.top=window.innerHeight/2;
 camara.bottom=window.innerHeight/-2;
 camara.near=0.1;
-camara.far=10;
+camara.far=8;
 camara.updateProjectionMatrix();
-camara.position.z=8;
+camara.position.z=5;
 
 /////////////////////////////
 renderizador= new THREE.WebGLRenderer();
