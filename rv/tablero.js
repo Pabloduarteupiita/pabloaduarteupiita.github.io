@@ -254,14 +254,14 @@ grises.merge(cubo63.geometry,cubo63.matrix);
 var material1 = new THREE.MeshBasicMaterial({color: 0xffffff});
 var material2 = new THREE.MeshBasicMaterial({color: 0x808080});
 
-var grisest= new THREE.Mesh(grises,material1);
+var grisesmalla= new THREE.Mesh(grises,material1);
 
 var escena= new THREE.Scene();
-escena.add(grisest);
+escena.add(grisesmalla);
 
 
 var camara= new THREE.PerspectiveCamera();
-Camara.position.z=8;
+Camara.position.z=5;
 				
 renderizador= new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
