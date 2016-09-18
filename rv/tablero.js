@@ -6,12 +6,11 @@ var geometry = new THREE.Geometry();
 
 				for ( var i = - size; i <= size; i += step ) {
 
-					geometry.vertices.push( new THREE.Vector3( - size, 0, i ) );
-					geometry.vertices.push( new THREE.Vector3(   size, 0, i ) );
+					geometry.vertices.push( new THREE.BoxGeometry(1,1,1)( - size, 0, i ) );
+					geometry.vertices.push( new THREE.BoxGeometry(1,1,1)(   size, 0, i ) );
 
-					geometry.vertices.push( new THREE.Vector3( i, 0, - size ) );
-					geometry.vertices.push( new THREE.Vector3( i, 0,   size ) );
-
+					geometry.vertices.push( new new THREE.BoxGeometry(1,1,1)( i, 0, - size ) );
+					geometry.vertices.push( new THREE.BoxGeometry(1,1,1)( i, 0,   size ) );
 				}
 
 var material = new THREE.LineBasicMaterial( { color: 0x808080} );
@@ -36,7 +35,7 @@ scene.add( line );
 //camara.position.z=5;
 var camara= new THREE.PerspectiveCamera();
 
-camara.position.y=2;
+//camara.position.y=2;
 camara.position.z=8;
 				
 renderizador= new THREE.WebGLRenderer();
