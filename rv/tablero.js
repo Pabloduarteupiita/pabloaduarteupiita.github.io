@@ -333,20 +333,20 @@ torreForma.merge(p7Malla.geometry,p7Malla.matrix);
 var material= new THREE.MeshNormalMaterial();
 var torreMalla= new THREE.Mesh(torreForma,material);
 torreMalla.rotateX(Math.PI/2);
-torreMalla.rotateY(Math.PI/2);
+
 //////////////////////////////
 var escena= new THREE.Scene();
 escena.add(blancosmalla);
 escena.add(grisesmalla);
 escena.add(torreMalla);
 ////////////////////////////////////CAMARA
-var campoVision= 45; //grados
+var campoVision= 60; //grados
 var relacionAspecto=window.innerWidth/window.innerHeight;
 var planoCercano=1;
-var planoLejano=1000;
+var planoLejano=100;
 var camara= new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercano,planoLejano)
 
-camara.position.z=15;
+camara.position.z=10;
 
 
 /////////////////////////////
