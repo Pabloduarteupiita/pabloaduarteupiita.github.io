@@ -251,7 +251,7 @@ grises.merge(cubo64m.geometry,cubo64m.matrix);
 
 
 var blancos= new THREE.Geometry();
-grises.merge(cubo2m.geometry,cubo2m.matrix);
+grises.merge(cubo1m.geometry,cubo1m.matrix);
 
 
 var material1 = new THREE.MeshBasicMaterial({color: 0x808080});
