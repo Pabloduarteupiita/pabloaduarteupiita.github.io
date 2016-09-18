@@ -1,43 +1,269 @@
-//var cubo1Forma(i,j)= new THREE.BoxGeometry(1,1,1);
+//var size = 64, step = 1;
+//var geometry = new THREE.Geometry();
+//				for ( var i = - size; i <= size; i += step ) {
+//
+//					geometry.vertices.push( new THREE.BoxGeometry( - size, 0, i ) );
+//					geometry.vertices.push( new THREE.BoxGeometry(   size, 0, i ) );
+//					geometry.vertices.push( new THREE.BoxGeometry( i, 0, - size ) );
+//					geometry.vertices.push( new THREE.BoxGeometry( i, 0,   size ) );
+//				}
+//var material = new THREE.LineBasicMaterial( { color: 0x808080} );
+//var line = new THREE.Mesh( geometry, material );
+//var scene= new THREE.Scene();
+
+/////MODO FEO  :(
+var cubo1Forma= new THREE.BoxGeometry(1,1,1);
 var cubo2Forma= new THREE.BoxGeometry(1,1,1);
-///
-var size = 64, step = 1;
-var geometry = new THREE.Geometry();
-				for ( var i = - size; i <= size; i += step ) {
+var cubo3Forma= new THREE.BoxGeometry(1,1,1);
+var cubo4Forma= new THREE.BoxGeometry(1,1,1);
+var cubo5Forma= new THREE.BoxGeometry(1,1,1);
+var cubo6Forma= new THREE.BoxGeometry(1,1,1);
+var cubo7Forma= new THREE.BoxGeometry(1,1,1);
+var cubo8Forma= new THREE.BoxGeometry(1,1,1);
+var cubo9Forma= new THREE.BoxGeometry(1,1,1);
+var cubo10Forma= new THREE.BoxGeometry(1,1,1);
+var cubo11Forma= new THREE.BoxGeometry(1,1,1);
+var cubo12Forma= new THREE.BoxGeometry(1,1,1);
+var cubo12Forma= new THREE.BoxGeometry(1,1,1);
+var cubo13Forma= new THREE.BoxGeometry(1,1,1);
+var cubo14Forma= new THREE.BoxGeometry(1,1,1);
+var cubo15Forma= new THREE.BoxGeometry(1,1,1);
+var cubo16Forma= new THREE.BoxGeometry(1,1,1);
+var cubo17Forma= new THREE.BoxGeometry(1,1,1);
+var cubo18Forma= new THREE.BoxGeometry(1,1,1);
+var cubo19Forma= new THREE.BoxGeometry(1,1,1);
+var cubo20Forma= new THREE.BoxGeometry(1,1,1);
+var cubo21Forma= new THREE.BoxGeometry(1,1,1);
+var cubo22Forma= new THREE.BoxGeometry(1,1,1);
+var cubo23Forma= new THREE.BoxGeometry(1,1,1);
+var cubo24Forma= new THREE.BoxGeometry(1,1,1);
+var cubo25Forma= new THREE.BoxGeometry(1,1,1);
+var cubo26Forma= new THREE.BoxGeometry(1,1,1);
+var cubo27Forma= new THREE.BoxGeometry(1,1,1);
+var cubo28Forma= new THREE.BoxGeometry(1,1,1);
+var cubo29Forma= new THREE.BoxGeometry(1,1,1);
+var cubo30Forma= new THREE.BoxGeometry(1,1,1);
+var cubo31Forma= new THREE.BoxGeometry(1,1,1);
+var cubo32Forma= new THREE.BoxGeometry(1,1,1);
+var cubo33Forma= new THREE.BoxGeometry(1,1,1);
+var cubo34Forma= new THREE.BoxGeometry(1,1,1);
+var cubo35Forma= new THREE.BoxGeometry(1,1,1);
+var cubo36Forma= new THREE.BoxGeometry(1,1,1);
+var cubo37Forma= new THREE.BoxGeometry(1,1,1);
+var cubo38Forma= new THREE.BoxGeometry(1,1,1);
+var cubo39Forma= new THREE.BoxGeometry(1,1,1);
+var cubo40Forma= new THREE.BoxGeometry(1,1,1);
+var cubo41Forma= new THREE.BoxGeometry(1,1,1);
+var cubo42Forma= new THREE.BoxGeometry(1,1,1);
+var cubo43Forma= new THREE.BoxGeometry(1,1,1);
+var cubo44Forma= new THREE.BoxGeometry(1,1,1);
+var cubo45Forma= new THREE.BoxGeometry(1,1,1);
+var cubo46Forma= new THREE.BoxGeometry(1,1,1);
+var cubo47Forma= new THREE.BoxGeometry(1,1,1);
+var cubo48Forma= new THREE.BoxGeometry(1,1,1);
+var cubo49Forma= new THREE.BoxGeometry(1,1,1);
+var cubo50Forma= new THREE.BoxGeometry(1,1,1);
+var cubo51Forma= new THREE.BoxGeometry(1,1,1);
+var cubo52Forma= new THREE.BoxGeometry(1,1,1);
+var cubo53Forma= new THREE.BoxGeometry(1,1,1);
+var cubo54Forma= new THREE.BoxGeometry(1,1,1);
+var cubo55Forma= new THREE.BoxGeometry(1,1,1);
+var cubo56Forma= new THREE.BoxGeometry(1,1,1);
+var cubo57Forma= new THREE.BoxGeometry(1,1,1);
+var cubo58Forma= new THREE.BoxGeometry(1,1,1);
+var cubo59Forma= new THREE.BoxGeometry(1,1,1);
+var cubo60Forma= new THREE.BoxGeometry(1,1,1);
+var cubo61Forma= new THREE.BoxGeometry(1,1,1);
+var cubo62Forma= new THREE.BoxGeometry(1,1,1);
+var cubo63Forma= new THREE.BoxGeometry(1,1,1);
+var cubo64Forma= new THREE.BoxGeometry(1,1,1);
 
-					geometry.vertices.push( new THREE.BoxGeometry( - size, 0, i ) );
-					geometry.vertices.push( new THREE.BoxGeometry(   size, 0, i ) );
+cubo1Forma.translate(0,0,0);
+cubo2Forma.translate(1,0,0);
+cubo3Forma.translate(2,0,0);
+cubo4Forma.translate(3,0,0);
+cubo5Forma.translate(4,0,0);
+cubo6Forma.translate(5,0,0);
+cubo7Forma.translate(6,0,0);
+cubo8Forma.translate(7,0,0);
 
-					geometry.vertices.push( new THREE.BoxGeometry( i, 0, - size ) );
-					geometry.vertices.push( new THREE.BoxGeometry( i, 0,   size ) );
-				}
-var material = new THREE.LineBasicMaterial( { color: 0x808080} );
-var line = new THREE.Mesh( geometry, material );
-var scene= new THREE.Scene();
+cubo9Forma.translate(0,1,0);
+cubo10Forma.translate(1,,0);
+cubo11Forma.translate(2,1,0);
+cubo12Forma.translate(3,1,0);
+cubo13Forma.translate(4,1,0);
+cubo14Forma.translate(5,1,0);
+cubo15Forma.translate(6,1,0);
+cubo16Forma.translate(7,1,0);
+
+cubo17Forma.translate(0,2,0);
+cubo18Forma.translate(1,2,0);
+cubo19Forma.translate(2,2,0);
+cubo20Forma.translate(3,2,0);
+cubo21Forma.translate(4,2,0);
+cubo22Forma.translate(5,2,0);
+cubo23Forma.translate(6,2,0);
+cubo24Forma.translate(7,2,0);
+
+cubo25Forma.translate(0,3,0);
+cubo26Forma.translate(1,3,0);
+cubo27Forma.translate(2,3,0);
+cubo28Forma.translate(3,3,0);
+cubo29Forma.translate(4,3,0);
+cubo30Forma.translate(5,3,0);
+cubo31Forma.translate(6,3,0);
+cubo32Forma.translate(7,3,0);
+
+cubo25Forma.translate(0,4,0);
+cubo26Forma.translate(1,4,0);
+cubo27Forma.translate(2,4,0);
+cubo28Forma.translate(3,4,0);
+cubo29Forma.translate(4,4,0);
+cubo30Forma.translate(5,4,0);
+cubo31Forma.translate(6,4,0);
+cubo32Forma.translate(7,4,0);
+
+cubo33Forma.translate(0,5,0);
+cubo34Forma.translate(1,5,0);
+cubo35Forma.translate(2,5,0);
+cubo36Forma.translate(3,5,0);
+cubo37Forma.translate(4,5,0);
+cubo38Forma.translate(5,5,0);
+cubo39Forma.translate(6,5,0);
+cubo40Forma.translate(7,5,0);
+
+cubo41Forma.translate(0,6,0);
+cubo42Forma.translate(1,6,0);
+cubo43Forma.translate(2,6,0);
+cubo44Forma.translate(3,6,0);
+cubo45Forma.translate(4,6,0);
+cubo46Forma.translate(5,6,0);
+cubo47Forma.translate(6,6,0);
+cubo48Forma.translate(7,6,0);
+
+cubo49Forma.translate(0,7,0);
+cubo50Forma.translate(1,7,0);
+cubo51Forma.translate(2,7,0);
+cubo52Forma.translate(3,7,0);
+cubo53Forma.translate(4,7,0);
+cubo54Forma.translate(5,7,0);
+cubo55Forma.translate(6,7,0);
+cubo56Forma.translate(7,7,0);
+
+var cubo1= new THREE.Mesh(cubo1);
+var cubo2= new THREE.Mesh(cubo2);
+var cubo3= new THREE.Mesh(cubo3);
+var cubo4= new THREE.Mesh(cubo4);
+var cubo5= new THREE.Mesh(cubo5);
+var cubo6= new THREE.Mesh(cubo6);
+var cubo7= new THREE.Mesh(cubo7);
+var cubo8= new THREE.Mesh(cubo8);
+var cubo9= new THREE.Mesh(cubo9);
+var cubo10= new THREE.Mesh(cubo10);
+var cubo11= new THREE.Mesh(cubo11);
+var cubo12= new THREE.Mesh(cubo12);
+var cubo13= new THREE.Mesh(cubo13);
+var cubo14= new THREE.Mesh(cubo14);
+var cubo15= new THREE.Mesh(cubo15);
+var cubo16= new THREE.Mesh(cubo16);
+var cubo17= new THREE.Mesh(cubo17);
+var cubo18= new THREE.Mesh(cubo18);
+var cubo19= new THREE.Mesh(cubo19);
+var cubo20= new THREE.Mesh(cubo20);
+var cubo21= new THREE.Mesh(cubo21);
+var cubo22= new THREE.Mesh(cubo22);
+var cubo23= new THREE.Mesh(cubo23);
+var cubo24= new THREE.Mesh(cubo24);
+var cubo25= new THREE.Mesh(cubo25);
+var cubo26= new THREE.Mesh(cubo26);
+var cubo27= new THREE.Mesh(cubo27);
+var cubo28= new THREE.Mesh(cubo28);
+var cubo29= new THREE.Mesh(cubo29);
+var cubo30= new THREE.Mesh(cubo30);
+var cubo31= new THREE.Mesh(cubo31);
+var cubo32= new THREE.Mesh(cubo32);
+var cubo33= new THREE.Mesh(cubo33);
+var cubo34= new THREE.Mesh(cubo34);
+var cubo35= new THREE.Mesh(cubo35);
+var cubo36= new THREE.Mesh(cubo36);
+var cubo37= new THREE.Mesh(cubo37);
+var cubo38= new THREE.Mesh(cubo38);
+var cubo39= new THREE.Mesh(cubo39);
+var cubo40= new THREE.Mesh(cubo40);
+var cubo41= new THREE.Mesh(cubo41);
+var cubo42= new THREE.Mesh(cubo42);
+var cubo43= new THREE.Mesh(cubo43);
+var cubo44= new THREE.Mesh(cubo44);
+var cubo45= new THREE.Mesh(cubo45);
+var cubo46= new THREE.Mesh(cubo46);
+var cubo47= new THREE.Mesh(cubo47);
+var cubo48= new THREE.Mesh(cubo48);
+var cubo49= new THREE.Mesh(cubo49);
+var cubo50= new THREE.Mesh(cubo50);
+var cubo51= new THREE.Mesh(cubo51);
+var cubo52= new THREE.Mesh(cubo52);
+var cubo53= new THREE.Mesh(cubo53);
+var cubo54= new THREE.Mesh(cubo54);
+var cubo55= new THREE.Mesh(cubo55);
+var cubo56= new THREE.Mesh(cubo56);
+var cubo57= new THREE.Mesh(cubo57);
+var cubo58= new THREE.Mesh(cubo58);
+var cubo59= new THREE.Mesh(cubo59);
+var cubo60= new THREE.Mesh(cubo60);
+var cubo61= new THREE.Mesh(cubo61);
+var cubo62= new THREE.Mesh(cubo62);
+var cubo63= new THREE.Mesh(cubo63);
+var cubo64= new THREE.Mesh(cubo64);
+
+var grises= new THREE.Geometry();
+grises.merge(cubo1.geometry,cubo1.matrix);
+grises.merge(cubo3.geometry,cubo3.matrix);
+grises.merge(cubo5.geometry,cubo5.matrix);
+grises.merge(cubo7.geometry,cubo7.matrix);
+grises.merge(cubo9.geometry,cubo9.matrix);
+grises.merge(cubo11.geometry,cubo11.matrix);
+grises.merge(cubo13.geometry,cubo13.matrix);
+grises.merge(cubo15.geometry,cubo15.matrix);
+grises.merge(cubo17.geometry,cubo17.matrix);
+grises.merge(cubo19.geometry,cubo19.matrix);
+grises.merge(cubo21.geometry,cubo21.matrix);
+grises.merge(cubo23.geometry,cubo23.matrix);
+grises.merge(cubo25.geometry,cubo25.matrix);
+grises.merge(cubo27.geometry,cubo27.matrix);
+grises.merge(cubo29.geometry,cubo29.matrix);
+grises.merge(cubo31.geometry,cubo31.matrix);
+grises.merge(cubo33.geometry,cubo33.matrix);
+grises.merge(cubo35.geometry,cubo35.matrix);
+grises.merge(cubo37.geometry,cubo37.matrix);
+grises.merge(cubo39.geometry,cubo39.matrix);
+grises.merge(cubo41.geometry,cubo41.matrix);
+grises.merge(cubo43.geometry,cubo43.matrix);
+grises.merge(cubo45.geometry,cubo45.matrix);
+grises.merge(cubo48.geometry,cubo47.matrix);
+grises.merge(cubo49.geometry,cubo49.matrix);
+grises.merge(cubo51.geometry,cubo51.matrix);
+grises.merge(cubo53.geometry,cubo53.matrix);
+grises.merge(cubo55.geometry,cubo55.matrix);
+grises.merge(cubo57.geometry,cubo57.matrix);
+grises.merge(cubo59.geometry,cubo59.matrix);
+grises.merge(cubo61.geometry,cubo61.matrix);
+grises.merge(cubo63.geometry,cubo63.matrix);
 
 
-//var material1 = new THREE.MeshBasicMaterial({color: 0xffffff});
+
+var material1 = new THREE.MeshBasicMaterial({color: 0xffffff});
 var material2 = new THREE.MeshBasicMaterial({color: 0x808080});
 
-//var cube1 = new THREE.Mesh( geometry, material1 );
-var cube2 = new THREE.Mesh( cubo2Forma, material2 );
+var grisest= new THREE.Mesh(grises,material1);
 
-//cubo1Forma.translate(0,0,0);
-cubo2Forma.translate(1,0,0);
-line.translateOnAxis( 0, 1,0)
-//var escena= new THREE.Scene();
-//escena.add(cube1);
-//escena.add(cube2);
-scene.add( line );
-scene.add( cube2 );
-//var camara= new THREE.PerspectiveCamera();
-//camara.position.z=5;
+var escena= new THREE.Scene();
+escena.add(grisest);
+
+
 var camara= new THREE.PerspectiveCamera();
-
-//camara.position.y=2;
-camara.position.z=8;
+Camara.position.z=8;
 				
 renderizador= new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
-renderizador.render(scene,camara)
+renderizador.render(escena,camara)
