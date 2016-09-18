@@ -26,7 +26,7 @@ var cube2 = new THREE.Mesh( cubo2Forma, material2 );
 
 //cubo1Forma.translate(0,0,0);
 cubo2Forma.translate(1,0,0);
-
+line.traslate(0,0,0)
 //var escena= new THREE.Scene();
 //escena.add(cube1);
 //escena.add(cube2);
