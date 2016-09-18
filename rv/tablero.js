@@ -148,7 +148,16 @@ cubo52.translate(3,7,0);
 cubo53.translate(4,7,0);
 cubo54.translate(5,7,0);
 cubo55.translate(6,7,0);
-cubo56translate(7,7,0);
+cubo56.translate(7,7,0);
+
+cubo57.translate(0,8,0);
+cubo58.translate(1,8,0);
+cubo59.translate(2,8,0);
+cubo60.translate(3,8,0);
+cubo61.translate(4,8,0);
+cubo62.translate(5,8,0);
+cubo63.translate(6,8,0);
+cubo64.translate(7,8,0);
 
 var cubo1m= new THREE.Mesh(cubo1);
 var cubo2m= new THREE.Mesh(cubo2);
