@@ -78,7 +78,7 @@ var cubo62= new THREE.BoxGeometry(1,1,1);
 var cubo63= new THREE.BoxGeometry(1,1,1);
 var cubo64= new THREE.BoxGeometry(1,1,1);
 
-cubo1.translate(0,0,0);
+
 cubo2.translate(1,0,0);
 cubo3.translate(2,0,0);
 cubo4.translate(3,0,0);
