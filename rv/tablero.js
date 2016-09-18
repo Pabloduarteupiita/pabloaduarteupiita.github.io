@@ -9,7 +9,7 @@ var geometry = new THREE.Geometry();
 					geometry.vertices.push( new THREE.BoxGeometry(1,1,1)( - size, 0, i ) );
 					geometry.vertices.push( new THREE.BoxGeometry(1,1,1)(   size, 0, i ) );
 
-					geometry.vertices.push( new new THREE.BoxGeometry(1,1,1)( i, 0, - size ) );
+					geometry.vertices.push( new THREE.BoxGeometry(1,1,1)( i, 0, - size ) );
 					geometry.vertices.push( new THREE.BoxGeometry(1,1,1)( i, 0,   size ) );
 				}
 
