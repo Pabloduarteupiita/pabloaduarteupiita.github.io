@@ -292,7 +292,7 @@ var blancosmalla= new THREE.Mesh(blancos,material2);
 
 ///////////////////////////////////TORRE
 
-var p1Forma= new THREE.CylinderGeometry(.3,.3,7);
+var p1Forma= new THREE.CylinderGeometry(.3,.3,.7);
 var p2Forma= new THREE.CylinderGeometry(.5,.5,.3);
 var p3Forma= new THREE.CylinderGeometry(.4,.5,.6);
 
@@ -305,10 +305,10 @@ p1Forma.translate(.5,1.7,0);
 p2Forma.translate(.5,1.7,0);
 p3Forma.translate(.5,.3,0);
 
-p4Forma.translate(.3,.7,.3);
-p5Forma.translate(.3,.7,-.3);
-p6Forma.translate(-.4,.7,.3);
-p7Forma.translate(-.4,.7,-.3);
+p4Forma.translate(.4,.7,.3);
+p5Forma.translate(.4,.7,-.3);
+p6Forma.translate(.8,.7,.3);
+p7Forma.translate(.8,.7,-.3);
 
 var p1Malla= new THREE.Mesh(p1Forma);
 var p2Malla= new THREE.Mesh(p2Forma);
