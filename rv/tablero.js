@@ -342,8 +342,8 @@ escena.add(torreMalla);
 ////////////////////////////////////CAMARA
 var camara= new THREE.PerspectiveCamera();
 camara.position.y=8;
-camara.rotateX(Math.PI/2);
-camara.position.z=8;
+camara.rotateZ(Math.PI/4);
+//camara.position.z=8;
 
 /////////////////////////////
 renderizador= new THREE.WebGLRenderer();
