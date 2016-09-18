@@ -332,9 +332,9 @@ torreForma.merge(p7Malla.geometry,p7Malla.matrix);
 
 var material= new THREE.MeshNormalMaterial();
 var torreMalla= new THREE.Mesh(torreForma,material);
-torreMalla.rotateX(Math.PI/2);
-grisesmalla.rotateX(Math.PI/2);
-blancosmalla.rotateX(Math.PI/2);
+torreMalla.rotateX(Math.PI/4);
+grisesmalla.rotateX(Math.PI/4);
+blancosmalla.rotateX(Math.PI/4);
 //////////////////////////////
 var escena= new THREE.Scene();
 escena.add(blancosmalla);
