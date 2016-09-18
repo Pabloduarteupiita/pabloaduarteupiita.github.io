@@ -301,7 +301,7 @@ var p5Forma= new THREE.CylinderGeometry(0,.1,.2);
 var p6Forma= new THREE.CylinderGeometry(0,.1,.2);
 var p7Forma= new THREE.CylinderGeometry(0,.1,.2);
 
-p12Forma.translate(.5,1.7,0);
+p1Forma.translate(.5,1.7,0);
 p2Forma.translate(.5,1.7,0);
 p3Forma.translate(.5,.3,0);
 
