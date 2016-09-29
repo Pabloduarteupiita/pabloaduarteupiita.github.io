@@ -11,10 +11,10 @@ cargador.load("earth.jpg",TEXTURA.retrollamada);
 TEXTURA.camara=new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeigth, 0.1, 1000); 
 TEXTURA.camara.position.z=5; 
 var lienzo=document.getElementById("ejemplo-ventana"); 
-var renderizador= new THREE.WebGLRenderer();
+//var renderizador= new THREE.WebGLRenderer();
 TEXTURA.renderizador= new THREE.WebGLRenderer({canvas: lienzo, antialias: true}); 
 TEXTURA.renderizador.setSize(600, 600); 
-document.body.appendChild(renderizador.domElement);} 
+//document.body.appendChild(renderizador.domElement);} 
 
 TEXTURA.loop = function() { 
 requestAnimationFrame(TEXTURA.loop); 
