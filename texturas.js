@@ -24,4 +24,4 @@ if (TEXTURA.malla != undefined){
   TEXTURA.renderizador.render(TEXTURA.escena,TEXTURA.camara); 
 } 
 TEXTURA.setup(); 
-TEXTURA.loop();
+TEXTURA.loop();  
