@@ -334,11 +334,7 @@ var material= new THREE.MeshNormalMaterial();
 var torreMalla= new THREE.Mesh(torreForma,material);
 torreMalla.rotateX(Math.PI/2);
 
-//////////////////////////////
-var escena= new THREE.Scene();
-escena.add(blancosmalla);
-escena.add(grisesmalla);
-escena.add(torreMalla);
+
 ////////////////////////////////////CAMARA
 var campoVision= 60; //grados
 var relacionAspecto=window.innerWidth/window.innerHeight;
@@ -348,11 +344,26 @@ var camara= new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercano
 camara.position.z=10;
 /////////////////////////////
 ///luces de colores 
-
+var luzPuntual1 = new THREE.PointLight(0xFFFFFF);
+luzPuntual1.position.x = 10;
+luzPuntual1.position.y = 10;
+luzPuntual1.position.z = 10;
+var luzPuntual2 = new THREE.PointLight(0xFFFFFF);
+luzPuntual2.position.x = 10;
+luzPuntual2.position.y = 10;
+luzPuntual2.position.z = 10;
+var luzPuntual = new THREE.PointLight(0xFFFFFF);
+luzPuntual2.position.x = 10;
+luzPuntual2.position.y = 10;
+luzPuntual2.position.z = 10;
 ///////Texturas 
 
-
-
+//////////////////////////////Agregar
+var escena= new THREE.Scene();
+escena.add(blancosmalla);
+escena.add(grisesmalla);
+escena.add(torreMalla);
+escena.add(luzPuntual1);
 
 /////////////////////////////
 renderizador= new THREE.WebGLRenderer();
