@@ -1,11 +1,9 @@
 var TEXTURA =new Object(); 
 TEXTURA.retrollamada = function(textura){ 
-
 var material = new THREE.MeshBasicMaterial({map: textura}); 
 TEXTURA.malla= new THREE.Mesh(new THREE.SphereGeometry(1), material); 
 TEXTURA.escena.add(TEXTURA.malla); 
 } 
-
 TEXTURA.setup=function(){ 
 TEXTURA.escena=new THREE.Scene(); 
 var cargador =new THREE.TextureLoader(); 
@@ -22,8 +20,8 @@ requestAnimationFrame(TEXTURA.loop);
 if (TEXTURA.malla != undefined){ 
      TEXTURA.malla.rotateX(0.01); 
      TEXTURA.malla.rotateY(0.01); 
-   } 
+} 
   TEXTURA.renderizador.render(TEXTURA.escena,TEXTURA.camara); 
- } 
+} 
 TEXTURA.setup(); 
 TEXTURA.loop();
