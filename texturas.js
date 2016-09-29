@@ -9,7 +9,7 @@ TEXTURA.escena.add(TEXTURA.malla);
 TEXTURA.setup=function(){ 
 TEXTURA.escena=new THREE.Scene(); 
 var cargador =new THREE.TextureLoader(); 
-cargador.load("earth.jpg", TEXTURA.retrollamada); 
+cargador.load("earth.jpg",TEXTURA.retrollamada); 
 TEXTURA.camara=new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeigth, 0.1, 1000); 
 TEXTURA.camara.position.z=5; 
 var lienzo=document.getElementById("ejemplo-ventana"); 
@@ -19,8 +19,7 @@ TEXTURA.renderizador.setSize(600, 600);
 
 TEXTURA.loop = function() { 
 requestAnimationFrame(TEXTURA.loop); 
-if (TEXTURA.malla != undefined) 
-  { 
+if (TEXTURA.malla != undefined){ 
      TEXTURA.malla.rotateX(0.01); 
      TEXTURA.mallarotateY(0.01); 
    } 
