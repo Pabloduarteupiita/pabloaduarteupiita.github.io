@@ -11,7 +11,7 @@ cargador.load("earth.jpg",TEXTURA.retrollamada);
 TEXTURA.camara=new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeigth, 0.1, 1000); 
 TEXTURA.camara.position.z=5; 
 var lienzo=document.getElementById("ejemplo-ventana"); 
-//TEXTURA.renderizador= new THREE.WebGLRenderer({canvas: lienzo, antialias: true}); 
+TEXTURA.renderizador= new THREE.WebGLRenderer({canvas: lienzo, antialias: true}); 
 TEXTURA.renderizador.setSize(600, 600); 
 } 
 
