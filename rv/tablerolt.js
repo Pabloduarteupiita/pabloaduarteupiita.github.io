@@ -341,9 +341,11 @@ var relacionAspecto=window.innerWidth/window.innerHeight;
 var planoCercano=1;
 var planoLejano=100;
 var camara= new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercano,planoLejano)
+torreMalla.rotateX(Math.PI/2);
 camara.position.z=10;
 camara.position.y=10;
 camara.position.x=10;
+torreMalla.rotateZ(Math.PI/2);
 /////////////////////////////
 ///luces de colores 
 var luzPuntual1 = new THREE.PointLight(0xFFFFFF);
