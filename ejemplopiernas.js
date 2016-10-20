@@ -15,10 +15,7 @@ var pieza;
 Pieza.prototype=new THREE.Object3D;
 function setup(){
 pieza=new Pieza();
-}
-function loop(){
-pieza.rotateY(0.1);
-pieza.piernaIzq.rotateZ(0.1);
+  
 var escena=new THREE.Scene();
 escena.add(pieza);
 
@@ -29,5 +26,10 @@ var lienzo = document.getElementById("ejemplopíernas");
 var renderizador = new THREE.WebGLRenderer( { canvas: lienzo, antialias: true } );
 
 renderizador.setSize(600,600);
+}
+function loop(){
+pieza.rotateY(0.1);
+pieza.piernaIzq.rotateZ(0.1);
+
 renderizador.render( escena, camara );
 }
