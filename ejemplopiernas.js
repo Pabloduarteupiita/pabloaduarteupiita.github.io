@@ -24,13 +24,11 @@ var camara= new THREE.PerspectiveCamera();
 camara.position.z=15;
 camara.position.z=5;
 
- var lienzo = document.getElementById("ejemplopiernas");
+var lienzo = document.getElementById("lambertMaterial");
 var renderizador = new THREE.WebGLRenderer( { canvas: lienzo, antialias: true } );
 
-
-renderizador.setSize(window.innerWidth,window.innerHeight);
-document.body.appendChild(renderizador.domElement);
-renderizador.render(escena,camara);
+renderizador.setSize( 600, 600 );
+renderizador.render( escena, camara );
 }
 
 function loop(){
