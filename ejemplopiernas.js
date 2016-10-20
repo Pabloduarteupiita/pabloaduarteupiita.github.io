@@ -13,7 +13,7 @@ cuerpo.position.z=2.5;
 }
 
 var pieza;
-pieza.protype=new THREE.Object3D;
+pieza.prototype=new THREE.Object3D;
 function setup(){
 pieza=new Pieza();
 
@@ -32,6 +32,8 @@ document.body.appendChild(renderizador.domElement);
 }
 
 function loop(){
-pieza.rotateY=0.1;
+pieza.rotateY(0.1);
+pieza.piernaIzq.rotateZ(0.1)
 renderizador.render(escena,camara);
+
 }
