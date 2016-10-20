@@ -14,7 +14,7 @@ cuerpo.position.z=2.5;
 
 var pieza;
 pieza.protype=new THREE.Object3D;
-fucntion setup(){
+function setup(){
 pieza=new Pieza();
 
 var escena=new THREE.Scene();
