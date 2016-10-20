@@ -31,7 +31,7 @@ document.body.appendChild(renderizador.domElement);
 
 }
 
-functionloop(){
+function loop(){
 pieza.rotateY=0.1;
 renderizador.render(escena,camara);
 }
