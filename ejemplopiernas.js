@@ -24,8 +24,10 @@ var camara= new THREE.PerspectiveCamera();
 camara.position.z=15;
 camara.position.z=5;
 
-var lienzo= document.getElementById("ejemplopiernas");
-var renderizador= new THREE.WebGLRenderer();
+ var lienzo = document.getElementById("ejemplopiernas");
+var renderizador = new THREE.WebGLRenderer( { canvas: lienzo, antialias: true } );
+
+
 renderizador.setSize(window.innerWidth,window.innerHeight);
 document.body.appendChild(renderizador.domElement);
 renderizador.render(escena,camara);
@@ -33,8 +35,6 @@ renderizador.render(escena,camara);
 
 function loop(){
 pieza.rotateY(0.1);
-pieza.piernaIzq.rotateZ(0.1)
-
-
+pieza.piernaIzq.rotateZ(0.1);
  
 }
