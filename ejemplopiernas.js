@@ -13,7 +13,7 @@ cuerpo.position.z=2.5;
 }
 
 var pieza;
-pieza.prototype=new THREE.Object3D;
+Pieza.prototype=new THREE.Object3D;
 function setup(){
 pieza=new Pieza();
 
