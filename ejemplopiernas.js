@@ -5,20 +5,20 @@ this.piernaDer=newTHREE.Mesh(new THREE.BoxGeometry(1,5,1));
 var cuerpo=newTHREE.Mesh(new THREE.BoxGeometry(5,10,15));
 this.add(this.piernaIzq,this.piernaDer,cuerpo);
 
-this.piernaIzq.position.z=-2
-this.piernaIzq.position.y=-2.5
-this.piernaDer.position.z=-2
-this.piernaDer.position.y=-2.5
-cuerpo.position.z=2.5
+this.piernaIzq.position.z=-2;
+this.piernaIzq.position.y=-2.5;
+this.piernaDer.position.z=-2;
+this.piernaDer.position.y=-2.5;
+cuerpo.position.z=2.5;
 }
 
-var pieza
+var pieza;
 pieza.protype=new THREE.Object3D;
 fucntion setup(){
-pieza=new Pieza()
+pieza=new Pieza();
 
 var escena=new THREE.Scene();
-escena.add(pieza)
+escena.add(pieza);
 
 var camara= new THREE.PerspectiveCamera();
 camara.position.z=15;
