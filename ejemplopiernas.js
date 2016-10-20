@@ -9,7 +9,7 @@ this.piernaIzq.position.z=-2;
 this.piernaIzq.position.y=-2.5;
 this.piernaDer.position.z=-2;
 this.piernaDer.position.y=-2.5;
-cuerpo.position.z=2.5;
+cuerpo.position.y=2.5;
 }
 
 var pieza;
@@ -27,11 +27,11 @@ var lienzo = document.getElementById("ejemplopíernas");
 var renderizador = new THREE.WebGLRenderer( { canvas: lienzo, antialias: true } );
 
 renderizador.setSize(600,600);
-renderizador.render( escena, camara );
+
 }
 
 function loop(){
 pieza.rotateY(0.1);
 pieza.piernaIzq.rotateZ(0.1);
- 
+renderizador.render( escena, camara );
 }
