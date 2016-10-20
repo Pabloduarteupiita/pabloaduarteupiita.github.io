@@ -26,7 +26,7 @@ camara.position.z=15;
 var lienzo = document.getElementById("ejemplopíernas");
 var renderizador = new THREE.WebGLRenderer( { canvas: lienzo, antialias: true } );
 
-renderizador.setSize( 600, 600 );
+renderizador.setSize(600,600);
 renderizador.render( escena, camara );
 }
 
