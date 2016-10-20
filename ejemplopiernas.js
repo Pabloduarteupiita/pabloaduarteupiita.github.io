@@ -17,7 +17,21 @@ pieza.protype=new THREE.Object3D;
 fucntion setup(){
 pieza=new Pieza()
 
+var escena=new THREE.Scene();
+escena.add(pieza)
+
+var camara= new THREE.PerspectiveCamera();
+camara.position.z=15;
+camara.position.z=5;
+
+var lienzo= document.getElementById("ejemplopiernas");
+var renderizador= new THREE.WebGLRenderer();
+renderizador.setSize(window.innerWidth,window.innerHeight);
+document.body.appendChild(renderizador.domElement);
+
 }
 
 functionloop(){
 pieza.rotateY=0.1;
+renderizador.render(escena,camara);
+}
