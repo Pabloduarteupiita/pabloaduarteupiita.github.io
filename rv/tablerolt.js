@@ -342,12 +342,16 @@ var planoCercano=1;
 var planoLejano=100;
 var camara= new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercano,planoLejano)
 torreMalla.rotateX(Math.PI/2);
+torreMalla.rotateZ(Math.PI/2);
+torreMalla.rotateY(Math.PI);
+
 camara.position.z=10;
 camara.position.y=10;
 camara.position.x=10;
-torreMalla.rotateZ(Math.PI/2);
-torreMalla.rotateY(Math.PI/2);
-torreMalla.rotateX(Math.PI/2);
+
+camara.rotateZ(Math.PI);
+
+
 
 /////////////////////////////
 ///luces de colores 
