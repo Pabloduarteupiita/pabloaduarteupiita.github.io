@@ -339,7 +339,7 @@ torreMalla.rotateX(Math.PI/2);
 var campoVision= 120; //grados
 var relacionAspecto=window.innerWidth/window.innerHeight;
 var planoCercano=1;
-var planoLejano=100;
+var planoLejano=10;
 var camara= new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercano,planoLejano)
 torreMalla.rotateX(Math.PI/2);
 torreMalla.rotateZ(Math.PI/2);
@@ -364,9 +364,9 @@ luzPuntual2.position.x = 10;
 luzPuntual2.position.y = 10;
 luzPuntual2.position.z = 10;
 var luzPuntual = new THREE.PointLight(0xFFFFFF);
-luzPuntual2.position.x = 10;
-luzPuntual2.position.y = 10;
-luzPuntual2.position.z = 10;
+luzPuntual2.position.x = 20;
+luzPuntual2.position.y = 20;
+luzPuntual2.position.z = 20;
 ///////Texturas 
 
 //////////////////////////////Agregar
