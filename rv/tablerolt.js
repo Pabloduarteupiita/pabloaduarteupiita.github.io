@@ -349,9 +349,9 @@ camara.position.z=10;
 camara.position.y=10;
 camara.position.x=10;
 
-camara.rotateZ(Math.PI);
-camara.rotateY(Math.PI);
-camara.rotateX(Math.PI);
+camara.rotateZ(Math.PI/2);
+camara.rotateY(Math.PI/2);
+camara.rotateX(Math.PI/2);
 
 
 /////////////////////////////
