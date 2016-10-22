@@ -347,6 +347,7 @@ camara.position.y=10;
 camara.position.x=10;
 torreMalla.rotateZ(Math.PI/2);
 torreMalla.rotateY(Math.PI/2);
+torreMalla.rotateX(Math.PI/2);
 
 /////////////////////////////
 ///luces de colores 
