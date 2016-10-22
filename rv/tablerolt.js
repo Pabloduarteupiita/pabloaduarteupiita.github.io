@@ -345,11 +345,11 @@ torreMalla.rotateX(Math.PI/2);
 torreMalla.rotateZ(Math.PI/2);
 torreMalla.rotateY(Math.PI);
 
-camara.position.z=10;
-camara.position.y=10;
-camara.position.x=10;
+camara.position.z=20;
+camara.position.y=20;
+camara.position.x=20;
 
-camara.rotateZ(Math.PI/3);
+//camara.rotateZ(Math.PI/3);
 camara.rotateX(Math.PI/2);
 
 
