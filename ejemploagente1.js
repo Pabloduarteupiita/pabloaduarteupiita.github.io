@@ -4,13 +4,14 @@ this.position.x=x;
 this.position.y=y;   
 }
 
-Agent.Prototype=new THREE.Object3D();
+Agent.prototype=new THREE.Object3D();
 Agent.prototype.sense= function(enviroment){};
 Agent.prototype.plan= function(enviroment){};
 Agent.prototype.act= function(enviroment){};
 
 function Enviroment(){
 THREE.Scene.call(this);
+}
 
 Enviroment.prototype=new THREE.Scene();
 Enviroment.prototype.sense=function(){
