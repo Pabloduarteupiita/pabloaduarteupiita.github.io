@@ -18,7 +18,7 @@ Enviroment.prototype=new THREE.Scene();
 Enviroment.prototype.sense=function(){
 for (var i=0; i<this.children.lenght;i++){
 if(this.children[i].sense!==undefined)
-hhis.chlidren[i].sense(this);
+this.chlidren[i].sense(this);
 }
 }
 //interfaz entre entorno y agente
