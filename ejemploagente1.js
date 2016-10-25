@@ -55,7 +55,7 @@ entorno.add(new Pelota(.5));
 renderer=new THREE.WEbGLRenderer();
 renderer.setSize(window.innerHeight=.95,window.innerHeight=.95);
 document.body.appendChild(renderer.domElement);
-
+}
 function loop(){
 requestAnimationFrame(loop);
 entorno.sense();
