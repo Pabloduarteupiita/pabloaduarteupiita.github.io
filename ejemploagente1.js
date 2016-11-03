@@ -3,16 +3,13 @@ THREE.Object3D.call(this);
 this.position.x=x;
 this.position.y=y;   
 }
-
 Agent.prototype=new THREE.Object3D();
 Agent.prototype.sense= function(enviroment){};
 Agent.prototype.plan= function(enviroment){};
 Agent.prototype.act= function(enviroment){};
-
 function Enviroment(){
 THREE.Scene.call(this);
 }
-
 Enviroment.prototype=new THREE.Scene();
 Enviroment.prototype.sense=function(){
 for (var i=0; i<this.children.lenght;i++){
@@ -39,15 +36,6 @@ if (this.children[i].act !== undefined)
 this.children[i].act(this);
 }
 }
-
-
-
-
-
-
-
-
-
 function Pelota(r,x=0,y=0){
 Agent.call(this,x,y)
 this.add(new THREE.Mesh(new THREE.SphereGeometry(r),new THREE.MeshNormalMaterial()));
@@ -93,7 +81,6 @@ Pared.prototype=new THREE.Object3D;
 function setup(){
 entorno=new THREE.PerspectiveCamera();
 camara.position.z=30;
-
 entorno.add(new Pared(1,7,0));
 entorno.add(new Pared(1,-7,0));
 entorno.add(new Pared(1,7,1));
@@ -113,8 +100,3 @@ entorno.plan();
 entorno.act();
 renderer.render(entorno,camara);
 }
-
-
-
-
-
