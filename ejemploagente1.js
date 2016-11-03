@@ -1,15 +1,16 @@
-function Agent(x=0,y=0)
+unction Agent(x=0, y=0)
 {
-THREE.Object3D.call(this);
-this.position.x=x;
-this.position.y=y;   
+      THREE.Object3D.call(this);
+      this.position.x =x;
+      this.position.y =y;     
 }
-Agent.prototype= new THREE.Object3D();
-Agent.prototype.sense= function(enviroment){};
-Agent.prototype.plan= function(enviroment){};
-Agent.prototype.act= function(enviroment){};
-function Enviroment(){
-THREE.Scene.call(this);
+Agent.prototype = new THREE.Object3D();
+Agent.prototype.sense= function(environment) {};
+Agent.prototype.plan= function(environment) {};
+Agent.prototype.act= function(environment) {};
+function Environment()
+{
+      THREE.Scene.call(this);
 }
 Enviroment.prototype=new THREE.Scene();
 Enviroment.prototype.sense=function(){
