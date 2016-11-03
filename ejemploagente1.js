@@ -1,4 +1,3 @@
-//
 function Agent(x=0,y=0){
 THREE.Object3D.call(this);
 this.position.x=x;
@@ -51,7 +50,7 @@ this.children[i].act(this);
 
 function Pelota(r,x=0,y=0){
 Agent.call(this,x,y)
-this.add(new THREE.Mesh(new THREE.SphereGEometry(r),new THREE.MeshNormalMaterial()));
+this.add(new THREE.Mesh(new THREE.SphereGeometry(r),new THREE.MeshNormalMaterial()));
 
 this.step=0.1;
 this.colition=0;
