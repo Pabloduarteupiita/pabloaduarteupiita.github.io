@@ -7,6 +7,7 @@ Agent.prototype= new THREE.Object3D();
 Agent.prototype.sense= function(enviroment){};
 Agent.prototype.plan= function(enviroment){};
 Agent.prototype.act= function(enviroment){};
+
 function Enviroment(){
 THREE.Scene.call(this);
 }
@@ -22,7 +23,6 @@ Enviroment.prototype.plan=function(){
 for(var i=0; i<this.children.length;i++){
 if (this.children[i].plan !== undefined)
 this.children[i].plan(this);
-}
 }
 Enviroment.prototype.sense=function(){
 for(var i=0; i<this.children.length;i++){
