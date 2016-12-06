@@ -1,16 +1,16 @@
 var camara, escena, rederizador;
 function setup(){
 
- var text1=new THREE.TextureLoader().load('.jpg');
- var text2=new THREE.TextureLoader().load('.jpg');
- var text3=new THREE.TextureLoader().load('.jpg');
- var text4=new THREE.TextureLoader().load('.jpg');
- var text5=new THREE.TextureLoader().load('.jpg');
+ var text1=new THREE.TextureLoader().load('crb.jpg');
+ var text2=new THREE.TextureLoader().load('crn.jpg');
+ var text3=new THREE.TextureLoader().load('madb.jpg');
+ var text4=new THREE.TextureLoader().load('mad.jpg');
+ var text5=new THREE.TextureLoader().load('gr.jpg');
   
  var blancas= new THREE.MeshBasicMaterial({map:text1});
  var negras= new THREE.MeshBasicMaterial({map:text2});
  var madera1= new THREE.MeshBasicMaterial({map:text3});
- var madera1= new THREE.MeshBasicMaterial({map:text4});
+ var madera2= new THREE.MeshBasicMaterial({map:text4});
  var granito= new THREE.MeshBasicMaterial({map:text5});
   
  //////////////////////////////////Piezas
@@ -79,10 +79,10 @@ torreMalla1.translateZ(-70);
     for(var i=0; i<8; i++){
       for(var j=0; j<8; j++){
         if(a==2){
-          cubo[k] = new THREE.Mesh( new THREE.BoxGeometry(10, 10, 4), marmolblanco );
+          cubo[k] = new THREE.Mesh( new THREE.BoxGeometry(10, 10, 4), madera1);
           a=1;
         }else{
-          cubo[k] = new THREE.Mesh( new THREE.BoxGeometry(10, 10, 4), marmolnegro );
+          cubo[k] = new THREE.Mesh( new THREE.BoxGeometry(10, 10, 4), madera2 );
           a=2;
         }
        cubo[k].position.x=j*10;
@@ -97,7 +97,7 @@ torreMalla1.translateZ(-70);
     }
   }
   //////////////////////////////////////////////////
-  var base = new THREE.Mesh( new THREE.BoxGeometry(90, 90, 2), marmolcafe );
+  var base = new THREE.Mesh( new THREE.BoxGeometry(90, 90, 2), granito );
   base.position.x=35;
   base.position.y=35;
   base.position.z=-2;
