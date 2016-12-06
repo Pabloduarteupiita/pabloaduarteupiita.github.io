@@ -102,7 +102,7 @@ torreMalla1.translateZ(-70);
   base.position.y=35;
   base.position.z=-2;
   escena.add(base);
-  escena.add(torreMalla1);
+  //escena.add(torreMalla1);
   escena.add(torreMalla2);
   escena.add(torreMalla3);
   escena.add(torreMalla4);
