@@ -102,14 +102,14 @@ peonMalla4.translateX(45);
 var p1Formareyna= new THREE.CylinderGeometry(2.5,2.2,3,false);
 var p2Formareyna= new THREE.CylinderGeometry(2,1.8,3,false);
 var p3Formareyna= new THREE.CylinderGeometry(2.3,2.5,2,false);
-var p4Formareyna= new THREE.SphererGeometry(1.5,false);
+var p4Formareyna= new THREE.SphereGeometry(1.5,false);
 
 p2Formareyna.translate(0,3,0);
 p3Formareyna.translate(0,6,0);
 p3Formareyna.translate(0,8,0);
 p4Formareyna.translate(0,8,0);
 
-var p1Mallareyna= new THREE.Mesh(p1Formareyna);
+var p1Mallareyna= new THREE.Mesh(p1Formareyna);s
 var p2Mallareyna= new THREE.Mesh(p2Formareyna);
 var p3Mallareyna= new THREE.Mesh(p3Formareyna);
 var p4Mallareyna= new THREE.Mesh(p3Formareyna);
@@ -147,7 +147,7 @@ camara.lookAt(new THREE.Vector3(40,40,0));
 camara.rotateZ(Math.PI/2);
 /////////////////////////////////Escena
 escena = new THREE.Scene();
-var base = new THREE.Mesh( new THREE.BoxGeometry(90, 90, 2), granito );
+var base = new THREE.Mesh( new THREE.BoxGeometry(90, 90, 2), granito);
 base.position.x=35;
 base.position.y=35;
 base.position.z=-2;
