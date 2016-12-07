@@ -15,7 +15,7 @@ var p1Formaalf= new THREE.CylinderGeometry(3,3,3,false);
 var p2Formaalf= new THREE.CylinderGeometry(2,2,3,false);
 var p3Formaalf= new THREE.CylinderGeometry(1.5,1,2,false);
 
-p2Formaalf.translate(0,5,0);
+p2Formaalf.translate(0,3,0);
 p3Formaalf.translate(0,8,0);
 
 
