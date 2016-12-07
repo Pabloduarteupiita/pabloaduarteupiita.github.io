@@ -28,14 +28,18 @@ alfilForma.merge(p1Mallaalf.geometry,p1Mallaalf.matrix);
 alfilForma.merge(p2Mallaalf.geometry,p2Mallaalf.matrix);
 alfilForma.merge(p3Mallaalf.geometry,p3Mallaalf.matrix);
 
-var alfilMalla1= new THREE.Mesh(torreForma,blancas);
-var alfilMalla2= new THREE.Mesh(torreForma,blancas);
-var alfilMalla3= new THREE.Mesh(torreForma,blancas);
-var alfilMalla4= new THREE.Mesh(torreForma,blancas);
+var alfilMalla1= new THREE.Mesh(alfilForma,blancas);
+var alfilMalla2= new THREE.Mesh(alfilForma,blancas);
+var alfilMalla3= new THREE.Mesh(alfilForma,negras);
+var alfilMalla4= new THREE.Mesh(alfilForma,negras);
 
   
 alfilMalla1.rotateX(Math.PI/2);
 alfilMalla1.translateY(3);
+alfilMalla1.translateZ(-70); 
+ 
+alfilMalla3.rotateX(Math.PI/2);
+alfilMalla1.translateY(8);
 alfilMalla1.translateZ(-70); 
 
  ////////////////////////////Tabla
