@@ -3,10 +3,11 @@ function setup(){
 
 var text1=new THREE.TextureLoader().load('crb.jpg');
 var text2=new THREE.TextureLoader().load('crn.jpg');
-
+var text3=new THREE.TextureLoader().load('gr.jpg');
  
 var blancas= new THREE.MeshBasicMaterial({map:text1});
 var negras= new THREE.MeshBasicMaterial({map:text2});
+var granito= new THREE.MeshBasicMaterial({map:text3});
 
   
  //////////////////////////////////Piezas
