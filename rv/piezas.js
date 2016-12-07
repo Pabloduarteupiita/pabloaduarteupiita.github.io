@@ -11,7 +11,7 @@ var granito= new THREE.MeshBasicMaterial({map:text3});
 
   
  //////////////////////////////////Piezas Alfil
-var p1Formaalf= new THREE.CylinderGeometry(2,2,3,false);
+var p1Formaalf= new THREE.CylinderGeometry(1.5,1.5,3,false);
 var p2Formaalf= new THREE.CylinderGeometry(1,1,3,false);
 var p3Formaalf= new THREE.CylinderGeometry(.5,.5,2,false);
 
@@ -60,7 +60,7 @@ var p1Formapeon= new THREE.CylinderGeometry(1,1,1,false);
 var p2Formapeon= new THREE.CylinderGeometry(.5,.5,1,false);
 var p3Formapeon= new THREE.SphereGeometry(1,false);
 
-p2Formapeon.translate(0,2.5,0);
+p2Formapeon.translate(0,1.5,0);
 p3Formapeon.translate(0,2,0);
 
 
@@ -98,8 +98,50 @@ peonMalla4.rotateX(Math.PI/2);
 peonMalla4.translateY(3);
 peonMalla2.translateZ(-35);
 peonMalla4.translateX(45);
+ 03///////////////////////////////////////////////Reyna 
+var p1Formaalf= new THREE.CylinderGeometry(2,2,3,false);
+var p2Formaalf= new THREE.CylinderGeometry(1,1,3,false);
+var p3Formaalf= new THREE.CylinderGeometry(.5,.5,2,false);
 
- ////////////////////////////Tabla
+p2Formaalf.translate(0,3,0);
+p3Formaalf.translate(0,5,0);
+
+
+var p1Mallaalf= new THREE.Mesh(p1Formaalf);
+var p2Mallaalf= new THREE.Mesh(p2Formaalf);
+var p3Mallaalf= new THREE.Mesh(p3Formaalf);
+
+var alfilForma= new THREE.Geometry();
+
+alfilForma.merge(p1Mallaalf.geometry,p1Mallaalf.matrix);
+alfilForma.merge(p2Mallaalf.geometry,p2Mallaalf.matrix);
+alfilForma.merge(p3Mallaalf.geometry,p3Mallaalf.matrix);
+
+var alfilMalla1= new THREE.Mesh(alfilForma,blancas);
+var alfilMalla2= new THREE.Mesh(alfilForma,blancas);
+var alfilMalla3= new THREE.Mesh(alfilForma,negras);
+var alfilMalla4= new THREE.Mesh(alfilForma,negras);
+
+  
+alfilMalla1.rotateX(Math.PI/2);
+alfilMalla1.translateY(3);
+alfilMalla1.translateZ(-70); 
+ 
+alfilMalla3.rotateX(Math.PI/2);
+alfilMalla3.translateY(3);
+alfilMalla3.translateZ(-35); 
+
+ 
+alfilMalla2.rotateX(Math.PI/2);
+alfilMalla2.translateY(3);
+alfilMalla2.translateZ(35);
+alfilMalla2.translateX(-35);
+ 
+alfilMalla4.rotateX(Math.PI/2);
+alfilMalla4.translateY(3);
+alfilMalla2.translateZ(-35);
+alfilMalla4.translateX(35); 
+////////////////////////////Tabla
 var campoVision = 45;
 var relacionAspecto = window.innerWidth / window.innerHeight;
 var planoCercano = 1;
