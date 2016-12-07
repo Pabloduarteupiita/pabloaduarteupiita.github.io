@@ -11,9 +11,9 @@ var granito= new THREE.MeshBasicMaterial({map:text3});
 
   
  //////////////////////////////////Piezas Alfil
-var p1Formaalf= new THREE.CylinderGeometry(3,3,3,false);
-var p2Formaalf= new THREE.CylinderGeometry(2,2,3,false);
-var p3Formaalf= new THREE.CylinderGeometry(1.5,1,2,false);
+var p1Formaalf= new THREE.CylinderGeometry(2,2,3,false);
+var p2Formaalf= new THREE.CylinderGeometry(1.5,1,3,false);
+var p3Formaalf= new THREE.CylinderGeometry(.7,.5,2,false);
 
 p2Formaalf.translate(0,3,0);
 p3Formaalf.translate(0,5,0);
@@ -56,11 +56,11 @@ alfilMalla4.translateX(35);
  
  
 /////////////////////////////////////////////Peon
-var p1Formapeon= new THREE.CylinderGeometry(3,3,1,false);
-var p2Formapeon= new THREE.CylinderGeometry(1.5,1.5,1,false);
-var p3Formapeon= new THREE.SphereGeometry(1,false);
+var p1Formapeon= new THREE.CylinderGeometry(2,2,1.5,false);
+var p2Formapeon= new THREE.CylinderGeometry(1,1,1,false);
+var p3Formapeon= new THREE.SphereGeometry(2,false);
 
-p2Formapeon.translate(0,1,0);
+p2Formapeon.translate(0,2.5,0);
 p3Formapeon.translate(0,2,0);
 
 
