@@ -141,22 +141,9 @@ var peonMalla4= new THREE.Mesh(peonForma,negras);
   
 peonMalla1.rotateX(Math.PI/2);
 peonMalla1.translateY(3);
-peonMalla1.translateZ(-60); 
+peonMalla1.translateZ(-50); 
  
-peonMalla3.rotateX(Math.PI/2);
-peonMalla3.translateY(3);
-peonMalla3.translateZ(-45); 
 
- 
-peonMalla2.rotateX(Math.PI/2);
-peonMalla2.translateY(3);
-peonMalla2.translateZ(35);
-peonMalla2.translateX(-45);
- 
-peonMalla4.rotateX(Math.PI/2);
-peonMalla4.translateY(3);
-peonMalla2.translateZ(-35);
-peonMalla4.translateX(45);
 ///////////////////////////////////////////////Reyna 
 var p1Formareyna= new THREE.CylinderGeometry(2.5,2.2,3,false);
 var p2Formareyna= new THREE.CylinderGeometry(2,1.8,3,false);
