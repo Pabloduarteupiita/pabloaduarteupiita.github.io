@@ -60,7 +60,7 @@ var p1Formapeon= new THREE.CylinderGeometry(1,1,1,false);
 var p2Formapeon= new THREE.CylinderGeometry(.5,.5,1,false);
 var p3Formapeon= new THREE.SphereGeometry(1,false);
 
-p2Formapeon.translate(0,1,0);
+p2Formapeon.translate(0,2,0);
 p3Formapeon.translate(0,1.5,0);
 
 
