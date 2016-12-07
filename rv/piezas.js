@@ -109,7 +109,7 @@ p3Formareyna.translate(0,6,0);
 p3Formareyna.translate(0,8,0);
 p4Formareyna.translate(0,8,0);
 
-var p1Mallareyna= new THREE.Mesh(p1Formareyna);s
+var p1Mallareyna= new THREE.Mesh(p1Formareyna);
 var p2Mallareyna= new THREE.Mesh(p2Formareyna);
 var p3Mallareyna= new THREE.Mesh(p3Formareyna);
 var p4Mallareyna= new THREE.Mesh(p3Formareyna);
