@@ -265,7 +265,7 @@ base.position.x=35;
 base.position.y=35;
 base.position.z=-2;
 escena.add(base);
-//escena.add(torreMalla1);
+escena.add(torreMalla1);
 escena.add(torreMalla2);
 escena.add(torreMalla3);
 escena.add(torreMalla4);
@@ -275,7 +275,6 @@ escena.add(alfilMalla3);
 escena.add(alfilMalla4);
 escena.add(peonMalla1);
 escena.add(reynaMalla1)
-escena.add(reynaMalla2)
 escena.add(reynaMalla2)
 escena.add(horseMalla1)
   renderizador = new THREE.WebGLRenderer();
