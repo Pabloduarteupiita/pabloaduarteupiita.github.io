@@ -61,12 +61,12 @@ torreMalla1.rotateX(Math.PI/2);
 torreMalla1.translateY(3);
 torreMalla1.translateZ(-70); 
  //////////////////////////////////Piezas Alfil
-var p1Formaalf= new THREE.CylinderGeometry(1.5,1.5,3,false);
-var p2Formaalf= new THREE.CylinderGeometry(1,1,3,false);
-var p3Formaalf= new THREE.CylinderGeometry(.5,.5,2,false);
+var p1Formaalf= new THREE.CylinderGeometry(2,2,4,false);
+var p2Formaalf= new THREE.CylinderGeometry(1.5,1.5,3.5,false);
+var p3Formaalf= new THREE.CylinderGeometry(1,1,2.5,false);
 
-p2Formaalf.translate(0,3,0);
-p3Formaalf.translate(0,5,0);
+p2Formaalf.translate(0,4,0);
+p3Formaalf.translate(0,7.5,0);
 
 
 var p1Mallaalf= new THREE.Mesh(p1Formaalf);
@@ -87,22 +87,22 @@ var alfilMalla4= new THREE.Mesh(alfilForma,negras);
   
 alfilMalla1.rotateX(Math.PI/2);
 alfilMalla1.translateY(3);
-alfilMalla1.translateZ(-70); 
+alfilMalla1.translateZ(-30); 
  
 alfilMalla3.rotateX(Math.PI/2);
 alfilMalla3.translateY(3);
-alfilMalla3.translateZ(-35); 
+alfilMalla3.translateZ(-30); 
 
  
 alfilMalla2.rotateX(Math.PI/2);
 alfilMalla2.translateY(3);
-alfilMalla2.translateZ(35);
-alfilMalla2.translateX(-35);
+alfilMalla2.translateZ(30);
+alfilMalla2.translateX(50);
  
 alfilMalla4.rotateX(Math.PI/2);
 alfilMalla4.translateY(3);
-alfilMalla2.translateZ(-35);
-alfilMalla4.translateX(35);
+alfilMalla2.translateZ(-30);
+alfilMalla4.translateX(50);
  
  
 /////////////////////////////////////////////Peon
