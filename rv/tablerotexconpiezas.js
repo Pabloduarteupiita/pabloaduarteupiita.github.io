@@ -98,12 +98,12 @@ alfilMalla2.translateX(-20);
 alfilMalla3.rotateX(Math.PI/2);
 alfilMalla3.translateY(3);
 alfilMalla3.translateZ(-50); 
-alfilMalla4.translateX(-50);
+alfilMalla3.translateX(50);
  
 alfilMalla4.rotateX(Math.PI/2);
 alfilMalla4.translateY(3);
 alfilMalla4.translateZ(-20);
-alfilMalla4.translateX(-50);
+alfilMalla4.translateX(50);
  
  
 /////////////////////////////////////////////Peon
