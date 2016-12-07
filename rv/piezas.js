@@ -18,9 +18,9 @@ p2Formaalf.translate(0,1,0);
 p3Formaalf.translate(0,2,0);
 
 
-var p1Mallaalf= new THREE.Mesh(p1Forma);
-var p2Mallaalf= new THREE.Mesh(p2Forma);
-var p3Mallaalf= new THREE.Mesh(p3Forma);
+var p1Mallaalf= new THREE.Mesh(p1Formaalf);
+var p2Mallaalf= new THREE.Mesh(p2Formaalf);
+var p3Mallaalf= new THREE.Mesh(p3Formaalf);
 
 var alfilForma= new THREE.Geometry();
 
