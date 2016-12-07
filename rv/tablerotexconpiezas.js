@@ -102,7 +102,7 @@ alfilMalla2.translateX(20);
 alfilMalla4.rotateX(Math.PI/2);
 alfilMalla4.translateY(3);
 alfilMalla2.translateZ(-30);
-alfilMalla4.translateX(50);
+alfilMalla4.translateX(60);
  
  
 /////////////////////////////////////////////Peon
