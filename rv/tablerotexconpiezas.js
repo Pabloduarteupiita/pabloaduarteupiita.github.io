@@ -215,13 +215,13 @@ var horseMalla4= new THREE.Mesh(horseForma,negras);
  
 horseMalla1.rotateX(Math.PI/2);
 horseMalla1.translateY(3);
-horseMalla1.translateZ(50); 
-horseMalla1.translateX(-25);
+horseMalla1.translateZ(20); 
+horseMalla1.translateX(25);
  
 horseMalla2.rotateX(Math.PI/2);
 horseMalla2.translateY(3);
-horseMalla2.translateZ(55);
-horseMalla2.translateX(-35);
+horseMalla2.translateZ(10);
+horseMalla2.translateX(25);
 
  ////////////////////////////Tabla
   var campoVision = 45;
@@ -264,6 +264,7 @@ var base = new THREE.Mesh( new THREE.BoxGeometry(90, 90, 2), granito );
 base.position.x=35;
 base.position.y=35;
 base.position.z=-2;
+
 escena.add(base);
 escena.add(torreMalla1);
 escena.add(torreMalla2);
@@ -277,9 +278,10 @@ escena.add(peonMalla1);
 escena.add(reynaMalla1)
 escena.add(reynaMalla2)
 escena.add(horseMalla1)
-  renderizador = new THREE.WebGLRenderer();
-  renderizador.setSize(window.innerWidth, window.innerHeight);
-  document.body.appendChild(renderizador.domElement);
+
+ renderizador = new THREE.WebGLRenderer();
+renderizador.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderizador.domElement);
 }
 function loop(){
   requestAnimationFrame(loop);
@@ -287,39 +289,4 @@ function loop(){
 }
 setup();
 loop();
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
