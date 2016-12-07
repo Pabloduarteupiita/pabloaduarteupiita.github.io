@@ -60,8 +60,8 @@ var p1Formapeon= new THREE.CylinderGeometry(1,1,1,false);
 var p2Formapeon= new THREE.CylinderGeometry(.5,.5,1,false);
 var p3Formapeon= new THREE.SphereGeometry(1,false);
 
-p2Formapeon.translate(0,1.5,0);
-p3Formapeon.translate(0,2,0);
+p2Formapeon.translate(0,1,0);
+p3Formapeon.translate(0,1.5,0);
 
 
 var p1Mallapeon= new THREE.Mesh(p1Formapeon);
@@ -105,9 +105,9 @@ var p3Formareyna= new THREE.CylinderGeometry(2.3,2.5,2,false);
 var p4Formareyna= new THREE.SphereGeometry(1.5,false);
 
 p2Formareyna.translate(0,3,0);
-p3Formareyna.translate(0,6,0);
-p3Formareyna.translate(0,8,0);
-p4Formareyna.translate(0,8,0);
+p3Formareyna.translate(0,5,0);
+p4Formareyna.translate(0,5,0);
+
 
 var p1Mallareyna= new THREE.Mesh(p1Formareyna);
 var p2Mallareyna= new THREE.Mesh(p2Formareyna);
@@ -145,9 +145,9 @@ camara.position.x=160;
 camara.position.y=40;
 camara.lookAt(new THREE.Vector3(40,40,0));
 camara.rotateZ(Math.PI/2);
-/////////////////////////////////Escena
+/////////////////////////////Escena
 escena = new THREE.Scene();
-var base = new THREE.Mesh( new THREE.BoxGeometry(90, 90, 2), granito);
+var base = new THREE.Mesh( new THREE.BoxGeometry(90, 90, 2),granito);
 base.position.x=35;
 base.position.y=35;
 base.position.z=-2;
