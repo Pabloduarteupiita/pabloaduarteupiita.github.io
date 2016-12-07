@@ -98,49 +98,42 @@ peonMalla4.rotateX(Math.PI/2);
 peonMalla4.translateY(3);
 peonMalla2.translateZ(-35);
 peonMalla4.translateX(45);
- 03///////////////////////////////////////////////Reyna 
-var p1Formaalf= new THREE.CylinderGeometry(2,2,3,false);
-var p2Formaalf= new THREE.CylinderGeometry(1,1,3,false);
-var p3Formaalf= new THREE.CylinderGeometry(.5,.5,2,false);
+///////////////////////////////////////////////Reyna 
+var p1Formareyna= new THREE.CylinderGeometry(2.5,2.2,3,false);
+var p2Formareyna= new THREE.CylinderGeometry(2,1.8,3,false);
+var p3Formareyna= new THREE.CylinderGeometry(2.3,2.5,2,false);
+var p4Formareyna= new THREE.SphererGeometry(1.5,false);
 
-p2Formaalf.translate(0,3,0);
-p3Formaalf.translate(0,5,0);
+p2Formareyna.translate(0,3,0);
+p3Formareyna.translate(0,6,0);
+p3Formareyna.translate(0,8,0);
+p4Formareyna.translate(0,8,0);
 
+var p1Mallareyna= new THREE.Mesh(p1Formareyna);
+var p2Mallareyna= new THREE.Mesh(p2Formareyna);
+var p3Mallareyna= new THREE.Mesh(p3Formareyna);
+var p4Mallareyna= new THREE.Mesh(p3Formareyna);
 
-var p1Mallaalf= new THREE.Mesh(p1Formaalf);
-var p2Mallaalf= new THREE.Mesh(p2Formaalf);
-var p3Mallaalf= new THREE.Mesh(p3Formaalf);
+var reynaForma= new THREE.Geometry();
 
-var alfilForma= new THREE.Geometry();
-
-alfilForma.merge(p1Mallaalf.geometry,p1Mallaalf.matrix);
-alfilForma.merge(p2Mallaalf.geometry,p2Mallaalf.matrix);
-alfilForma.merge(p3Mallaalf.geometry,p3Mallaalf.matrix);
-
-var alfilMalla1= new THREE.Mesh(alfilForma,blancas);
-var alfilMalla2= new THREE.Mesh(alfilForma,blancas);
-var alfilMalla3= new THREE.Mesh(alfilForma,negras);
-var alfilMalla4= new THREE.Mesh(alfilForma,negras);
-
+reynaForma.merge(p1Mallareyna.geometry,p1Mallareyna.matrix);
+reynaForma.merge(p2Mallareyna.geometry,p2Mallareyna.matrix);
+reynaForma.merge(p3Mallareyna.geometry,p3Mallareyna.matrix);
+reynaForma.merge(p4Mallareyna.geometry,p4Mallareyna.matrix);
+ 
+var reynaMalla1= new THREE.Mesh(reynaForma,blancas);
+var reynaMalla2= new THREE.Mesh(reynaForma,negras);
   
-alfilMalla1.rotateX(Math.PI/2);
-alfilMalla1.translateY(3);
-alfilMalla1.translateZ(-70); 
+reynaMalla1.rotateX(Math.PI/2);
+reynaMalla1.translateY(3);
+reynaMalla1.translateZ(-70); 
+reynaMalla1.translateX(-55);
  
-alfilMalla3.rotateX(Math.PI/2);
-alfilMalla3.translateY(3);
-alfilMalla3.translateZ(-35); 
-
+reynaMalla2.rotateX(Math.PI/2);
+reynaMalla2.translateY(3);
+reynaMalla2.translateZ(55);
+reynaMalla2.translateX(-35);
  
-alfilMalla2.rotateX(Math.PI/2);
-alfilMalla2.translateY(3);
-alfilMalla2.translateZ(35);
-alfilMalla2.translateX(-35);
- 
-alfilMalla4.rotateX(Math.PI/2);
-alfilMalla4.translateY(3);
-alfilMalla2.translateZ(-35);
-alfilMalla4.translateX(35); 
 ////////////////////////////Tabla
 var campoVision = 45;
 var relacionAspecto = window.innerWidth / window.innerHeight;
@@ -154,7 +147,6 @@ camara.lookAt(new THREE.Vector3(40,40,0));
 camara.rotateZ(Math.PI/2);
 /////////////////////////////////Escena
 escena = new THREE.Scene();
-/////////////////////////////////////////////////
 var base = new THREE.Mesh( new THREE.BoxGeometry(90, 90, 2), granito );
 base.position.x=35;
 base.position.y=35;
@@ -165,6 +157,8 @@ escena.add(alfilMalla2);
 escena.add(alfilMalla3);
 escena.add(alfilMalla4);
 escena.add(peonMalla1);
+escena.add(reynaMalla1)
+escena.add(reynaMalla2)
 renderizador = new THREE.WebGLRenderer();
 renderizador.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderizador.domElement);
