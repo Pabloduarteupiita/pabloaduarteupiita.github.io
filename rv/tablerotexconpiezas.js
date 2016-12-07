@@ -141,7 +141,8 @@ var peonMalla4= new THREE.Mesh(peonForma,negras);
   
 peonMalla1.rotateX(Math.PI/2);
 peonMalla1.translateY(3);
-peonMalla1.translateZ(-50); 
+peonMalla1.translateZ(-60); 
+ peonMalla1.translateX(10); 
  
 
 ///////////////////////////////////////////////Reyna 
