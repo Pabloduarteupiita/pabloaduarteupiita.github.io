@@ -87,11 +87,11 @@ var alfilMalla4= new THREE.Mesh(alfilForma,negras);
   
 alfilMalla1.rotateX(Math.PI/2);
 alfilMalla1.translateY(3);
-alfilMalla1.translateZ(-70); 
+alfilMalla1.translateZ(-40); 
  
 alfilMalla3.rotateX(Math.PI/2);
 alfilMalla3.translateY(3);
-alfilMalla3.translateZ(-30); 
+alfilMalla3.translateZ(-20); 
 
  
 alfilMalla2.rotateX(Math.PI/2);
