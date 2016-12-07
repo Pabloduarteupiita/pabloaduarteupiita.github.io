@@ -215,7 +215,7 @@ var horseMalla4= new THREE.Mesh(horseForma,negras);
  
 horseMalla1.rotateX(Math.PI/2);
 horseMalla1.translateY(3);
-horseMalla1.translateZ(-50); 
+horseMalla1.translateZ(50); 
 horseMalla1.translateX(-25);
  
 horseMalla2.rotateX(Math.PI/2);
