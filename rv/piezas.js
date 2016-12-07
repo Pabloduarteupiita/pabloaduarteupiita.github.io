@@ -11,9 +11,9 @@ var granito= new THREE.MeshBasicMaterial({map:text3});
 
   
  //////////////////////////////////Piezas
-var p1Formaalf= new THREE.CylinderGeometry(1,1,1,false);
-var p2Formaalf= new THREE.CylinderGeometry(.7,.7,1,false);
-var p3Formaalf= new THREE.CylinderGeometry(.3,.3,1,false);
+var p1Formaalf= new THREE.CylinderGeometry(10,10,10,false);
+var p2Formaalf= new THREE.CylinderGeometry(7,7,10,false);
+var p3Formaalf= new THREE.CylinderGeometry(3,3,1,false);
 
 p2Formaalf.translate(0,1,0);
 p3Formaalf.translate(0,2,0);
