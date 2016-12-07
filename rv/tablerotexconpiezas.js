@@ -60,6 +60,14 @@ var torreMalla4= new THREE.Mesh(torreForma,negras);
 torreMalla1.rotateX(Math.PI/2);
 torreMalla1.translateY(3);
 torreMalla1.translateZ(-70); 
+
+ 
+torreMalla1.rotateX(Math.PI/2);
+torreMalla1.translateY(3);
+torreMalla1.translateZ(-10); 
+
+ 
+
  //////////////////////////////////Piezas Alfil
 var p1Formaalf= new THREE.CylinderGeometry(2,2,4,false);
 var p2Formaalf= new THREE.CylinderGeometry(1.5,1.5,3.5,false);
