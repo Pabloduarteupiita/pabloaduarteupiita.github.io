@@ -184,6 +184,7 @@ reynaMalla1.translateZ(-30);
 
 reynaMalla2.rotateX(Math.PI/2);
 reynaMalla2.translateZ(-30);
+reynaMalla2.translateY(70);
 ///////////////////////////////////////////////Caballo 
 var p1Formahorse= new THREE.CylinderGeometry(1,1.5,1,false);
 var p2Formahorse= new THREE.CylinderGeometry(1,1,3,false);
