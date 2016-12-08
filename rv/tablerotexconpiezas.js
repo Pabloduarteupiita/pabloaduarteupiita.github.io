@@ -303,21 +303,21 @@ var horseMalla4= new THREE.Mesh(horseForma,negras);
  
 horseMalla1.rotateX(Math.PI/2);
 horseMalla1.translateY(3);
-horseMalla1.translateZ(-20); 
+horseMalla1.translateZ(-10); 
  
 horseMalla2.rotateX(Math.PI/2);
 horseMalla2.translateY(3);
 horseMalla2.translateX(-60);
  
-horseMalla2.rotateX(Math.PI/2);
-horseMalla2.translateY(3);
-horseMalla2.translateZ(-20);
-horseMalla2.translateX(70);
+horseMalla3.rotateX(Math.PI/2);
+horseMalla3.translateY(3);
+horseMalla3.translateZ(-10);
+horseMalla3.translateX(70);
  
-horseMalla2.rotateX(Math.PI/2);
-horseMalla2.translateY(3);
-horseMalla2.translateZ(-60);
-horseMalla2.translateX(70);
+horseMalla4.rotateX(Math.PI/2);
+horseMalla4.translateY(3);
+horseMalla4.translateZ(-60);
+horseMalla4.translateX(70);
 
  ////////////////////////////Tabla
   var campoVision = 45;
