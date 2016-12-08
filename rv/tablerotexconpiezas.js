@@ -307,7 +307,7 @@ horseMalla1.translateZ(-10);
  
 horseMalla2.rotateX(Math.PI/2);
 horseMalla2.translateY(3);
-horseMalla2.translateX(-60);
+horseMalla2.translateZ(-60);
  
 horseMalla3.rotateX(Math.PI/2);
 horseMalla3.translateY(3);
@@ -318,6 +318,40 @@ horseMalla4.rotateX(Math.PI/2);
 horseMalla4.translateY(3);
 horseMalla4.translateZ(-60);
 horseMalla4.translateX(70);
+ ///////////////////////////////////////////////Rey
+var p1Formarey= new THREE.CylinderGeometry(2.5,2.2,3,false);
+var p2Formarey= new THREE.CylinderGeometry(2,1.8,3,false);
+var p3Formarey= new THREE.CylinderGeometry(2.3,2.5,2,false);
+var p4Formarey= new THREE.BoxGeometry(1.5,1.5,1.5false);
+
+p2Formarey.translate(0,3,0);
+p3Formarey.translate(0,5,0);
+p4Formarey.translate(0,5,0);
+
+
+var p1Mallarey= new THREE.Mesh(p1Formarey);
+var p2Mallarey= new THREE.Mesh(p2Formarey);
+var p3Mallarey= new THREE.Mesh(p3Formarey);
+var p4Mallarey= new THREE.Mesh(p3Formarey);
+
+var reyForma= new THREE.Geometry();
+
+reyForma.merge(p1Mallarey.geometry,p1Mallarey.matrix);
+reyForma.merge(p2Mallarey.geometry,p2Mallarey.matrix);
+reyForma.merge(p3Mallarey.geometry,p3Mallarey.matrix);
+reyForma.merge(p4Mallarey.geometry,p4Mallarey.matrix);
+ 
+var reyMalla1= new THREE.Mesh(reyForma,blancas);
+var reyMalla2= new THREE.Mesh(reyForma,negras);
+  
+reyMalla1.rotateX(Math.PI/2);
+reyMalla1.translateY(3);
+reyMalla1.translateZ(-40);
+
+reyMalla2.rotateX(Math.PI/2);
+reyMalla2.translateZ(-40);
+reyMalla2.translateY(3);
+reyMalla2.translateX(70);
 
  ////////////////////////////Tabla
   var campoVision = 45;
@@ -389,15 +423,17 @@ escena.add(peonMalla14);
 escena.add(peonMalla15);
 escena.add(peonMalla16);
  
-escena.add(reynaMalla1)
-escena.add(reynaMalla2)
+escena.add(reynaMalla1);
+escena.add(reynaMalla2);
  
-escena.add(horseMalla1)
-escena.add(horseMalla2)
-escena.add(horseMalla3)
-escena.add(horseMalla4) 
+escena.add(horseMalla1);
+escena.add(horseMalla2);
+escena.add(horseMalla3);
+escena.add(horseMalla4) ;
+escena.add(reyMalla1);
+escena.add(reyMalla2);
  
- renderizador = new THREE.WebGLRenderer();
+renderizador = new THREE.WebGLRenderer();
 renderizador.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderizador.domElement);
 }
