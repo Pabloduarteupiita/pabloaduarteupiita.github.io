@@ -15,22 +15,22 @@ function setup(){
   
 //////////////////////////////////Piezas
 //////////////////////////////////////////////////Torre 
-var p1Forma= new THREE.CylinderGeometry(.7,.7,1,false);
-var p2Forma= new THREE.CylinderGeometry(1,1,.3,false);
+var p1Forma= new THREE.CylinderGeometry(1.5,1.5,2,false);
+var p2Forma= new THREE.CylinderGeometry(1,1,1,false);
 var p3Forma= new THREE.CylinderGeometry(.8,1,.6,false);
 
-var p4Forma= new THREE.CylinderGeometry(0,.2,.2,false);
-var p5Forma= new THREE.CylinderGeometry(0,.2,.2,false);
-var p6Forma= new THREE.CylinderGeometry(0,.2,.2,false);
-var p7Forma= new THREE.CylinderGeometry(0,.2,.2,false);
+var p4Forma= new THREE.CylinderGeometry(0,.5,.5,false);
+var p5Forma= new THREE.CylinderGeometry(0,.5,.5,false);
+var p6Forma= new THREE.CylinderGeometry(0,.5,.5,false);
+var p7Forma= new THREE.CylinderGeometry(0,.5,.5,false);
 
-p2Forma.translate(0,.7,0);
-p3Forma.translate(0,-.7,0);
+p2Forma.translate(0,2,0);
+p3Forma.translate(0,3,0);
 
-p4Forma.translate(.5,1,.5);
-p5Forma.translate(.5,1,-.5);
-p6Forma.translate(-.5,1,.5);
-p7Forma.translate(-.2,1,-.2);
+p4Forma.translate(.5,3,.5);
+p5Forma.translate(.5,3,-.5);
+p6Forma.translate(-.5,3,.5);
+p7Forma.translate(-.2,3,-.2);
 
 
 var p1Malla= new THREE.Mesh(p1Forma);
@@ -71,8 +71,8 @@ torreMalla3.translateX(70);
 
 torreMalla4.rotateX(Math.PI/2);
 torreMalla4.translateY(3);
-torreMalla4.translateX(-70); 
-torreMalla4.translateZ(70); 
+torreMalla4.translateX(70); 
+torreMalla4.translateZ(-70); 
  
 
  //////////////////////////////////Piezas Alfil
@@ -297,19 +297,27 @@ horseForma.merge(p3Mallahorse.geometry,p3Mallahorse.matrix);
 horseForma.merge(p4Mallahorse.geometry,p4Mallahorse.matrix);
  
 var horseMalla1= new THREE.Mesh(horseForma,blancas);
-var horseMalla2= new THREE.Mesh(horseForma,negras);
-var horseMalla3= new THREE.Mesh(horseForma,blancas);
+var horseMalla2= new THREE.Mesh(horseForma,blancas);
+var horseMalla3= new THREE.Mesh(horseForma,negras);
 var horseMalla4= new THREE.Mesh(horseForma,negras); 
  
 horseMalla1.rotateX(Math.PI/2);
 horseMalla1.translateY(3);
-horseMalla1.translateZ(20); 
-horseMalla1.translateX(25);
+horseMalla1.translateZ(-20); 
  
 horseMalla2.rotateX(Math.PI/2);
 horseMalla2.translateY(3);
-horseMalla2.translateZ(10);
-horseMalla2.translateX(25);
+horseMalla2.translateX(-60);
+ 
+horseMalla2.rotateX(Math.PI/2);
+horseMalla2.translateY(3);
+horseMalla2.translateZ(-20);
+horseMalla2.translateX(70);
+ 
+horseMalla2.rotateX(Math.PI/2);
+horseMalla2.translateY(3);
+horseMalla2.translateZ(-60);
+horseMalla2.translateX(70);
 
  ////////////////////////////Tabla
   var campoVision = 45;
@@ -383,8 +391,12 @@ escena.add(peonMalla16);
  
 escena.add(reynaMalla1)
 escena.add(reynaMalla2)
+ 
 escena.add(horseMalla1)
-
+escena.add(horseMalla2)
+escena.add(horseMalla3)
+escena.add(horseMalla4) 
+ 
  renderizador = new THREE.WebGLRenderer();
 renderizador.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderizador.domElement);
