@@ -167,7 +167,7 @@ peonMalla1.translateX(10);
 peonMalla2.rotateX(Math.PI/2);
 peonMalla2.translateY(3);
 peonMalla2.translateZ(-70); 
-peonMalla1.translateX(10); 
+peonMalla2.translateX(10); 
  
 peonMalla3.rotateX(Math.PI/2);
 peonMalla3.translateY(3);
