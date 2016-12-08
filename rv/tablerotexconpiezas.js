@@ -71,7 +71,7 @@ torreMalla3.translateX(70);
 
 torreMalla4.rotateX(Math.PI/2);
 torreMalla4.translateY(3);
-torreMalla4.translateZ(-70); 
+torreMalla4.translateX(-70); 
 torreMalla4.translateZ(70); 
  
 
