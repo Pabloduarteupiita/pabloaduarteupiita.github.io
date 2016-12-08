@@ -161,12 +161,12 @@ var peonMalla16= new THREE.Mesh(peonForma,negras);
   
 peonMalla1.rotateX(Math.PI/2);
 peonMalla1.translateY(3);
-peonMalla1.translateZ(-60); 
+peonMalla1.translateZ(-70); 
 peonMalla1.translateX(10); 
  
 peonMalla2.rotateX(Math.PI/2);
 peonMalla2.translateY(3);
-peonMalla2.translateZ(-70); 
+peonMalla2.translateZ(-60); 
 peonMalla2.translateX(10); 
  
 peonMalla3.rotateX(Math.PI/2);
@@ -358,6 +358,7 @@ escena.add(torreMalla1);
 escena.add(torreMalla2);
 escena.add(torreMalla3);
 escena.add(torreMalla4);
+ 
 escena.add(alfilMalla1);
 escena.add(alfilMalla2);
 escena.add(alfilMalla3);
