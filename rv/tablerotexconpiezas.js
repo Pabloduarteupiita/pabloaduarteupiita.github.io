@@ -133,25 +133,110 @@ p3Formapeon.translate(0,1.5,0);
 var p1Mallapeon= new THREE.Mesh(p1Formapeon);
 var p2Mallapeon= new THREE.Mesh(p2Formapeon);
 var p3Mallapeon= new THREE.Mesh(p3Formapeon);
-
+ 
 var peonForma= new THREE.Geometry();
 
 peonForma.merge(p1Mallapeon.geometry,p1Mallapeon.matrix);
 peonForma.merge(p2Mallapeon.geometry,p2Mallapeon.matrix);
 peonForma.merge(p3Mallapeon.geometry,p3Mallapeon.matrix);
+ 
 
 var peonMalla1= new THREE.Mesh(peonForma,blancas);
 var peonMalla2= new THREE.Mesh(peonForma,blancas);
-var peonMalla3= new THREE.Mesh(peonForma,negras);
-var peonMalla4= new THREE.Mesh(peonForma,negras);
+var peonMalla3= new THREE.Mesh(peonForma,blancas);
+var peonMalla4= new THREE.Mesh(peonForma,blancas);
+var peonMalla5= new THREE.Mesh(peonForma,blancas);
+var peonMalla6= new THREE.Mesh(peonForma,blancas);
+var peonMalla7= new THREE.Mesh(peonForma,blancas);
+var peonMalla8= new THREE.Mesh(peonForma,blancas);
+var peonMalla9= new THREE.Mesh(peonForma,negras);
+var peonMalla10= new THREE.Mesh(peonForma,negras);
+var peonMalla11= new THREE.Mesh(peonForma,negras);
+var peonMalla12= new THREE.Mesh(peonForma,negras);
+var peonMalla13= new THREE.Mesh(peonForma,negras);
+var peonMalla14= new THREE.Mesh(peonForma,negras);
+var peonMalla15= new THREE.Mesh(peonForma,negras);
+var peonMalla16= new THREE.Mesh(peonForma,negras);
 
   
 peonMalla1.rotateX(Math.PI/2);
 peonMalla1.translateY(3);
 peonMalla1.translateZ(-60); 
- peonMalla1.translateX(10); 
+peonMalla1.translateX(10); 
  
-
+peonMalla2.rotateX(Math.PI/2);
+peonMalla2.translateY(3);
+peonMalla2.translateZ(-70); 
+peonMalla1.translateX(10); 
+ 
+peonMalla3.rotateX(Math.PI/2);
+peonMalla3.translateY(3);
+peonMalla3.translateZ(-50); 
+peonMalla3.translateX(10); 
+ 
+peonMalla4.rotateX(Math.PI/2);
+peonMalla4.translateY(3);
+peonMalla4.translateZ(-40); 
+peonMalla4.translateX(10); 
+ 
+peonMalla5.rotateX(Math.PI/2);
+peonMalla5.translateY(3);
+peonMalla5.translateZ(-30); 
+peonMalla5.translateX(10); 
+ 
+peonMalla6.rotateX(Math.PI/2);
+peonMalla6.translateY(3);
+peonMalla6.translateZ(-20); 
+peonMalla6.translateX(10); 
+ 
+peonMalla7.rotateX(Math.PI/2);
+peonMalla7.translateY(3);
+peonMalla7.translateZ(-10); 
+peonMalla7.translateX(10); 
+ 
+peonMalla8.rotateX(Math.PI/2);
+peonMalla8.translateY(3);
+peonMalla8.translateX(10); 
+ 
+peonMalla9.rotateX(Math.PI/2);
+peonMalla9.translateY(3);
+peonMalla9.translateZ(-70); 
+peonMalla9.translateX(60); 
+ 
+peonMalla10.rotateX(Math.PI/2);
+peonMalla10.translateY(3);
+peonMalla10.translateZ(-60); 
+peonMalla10.translateX(60); 
+ 
+peonMalla11.rotateX(Math.PI/2);
+peonMalla11.translateY(3);
+peonMalla11.translateZ(-50); 
+peonMalla11.translateX(60); 
+ 
+peonMalla12.rotateX(Math.PI/2);
+peonMalla12.translateY(3);
+peonMalla12.translateZ(-40); 
+peonMalla12.translateX(60); 
+ 
+peonMalla13.rotateX(Math.PI/2);
+peonMalla13.translateY(3);
+peonMalla13.translateZ(-30); 
+peonMalla13.translateX(60); 
+ 
+peonMalla14.rotateX(Math.PI/2);
+peonMalla14.translateY(3);
+peonMalla14.translateZ(-20); 
+peonMalla14.translateX(60); 
+ 
+peonMalla15.rotateX(Math.PI/2);
+peonMalla15.translateY(3);
+peonMalla15.translateZ(-10); 
+peonMalla15.translateX(60); 
+ 
+peonMalla16.rotateX(Math.PI/2);
+peonMalla16.translateY(3);
+peonMalla16.translateX(60); 
+ 
 ///////////////////////////////////////////////Reyna 
 var p1Formareyna= new THREE.CylinderGeometry(2.5,2.2,3,false);
 var p2Formareyna= new THREE.CylinderGeometry(2,1.8,3,false);
@@ -184,7 +269,8 @@ reynaMalla1.translateZ(-30);
 
 reynaMalla2.rotateX(Math.PI/2);
 reynaMalla2.translateZ(-30);
-reynaMalla2.translateY(70);
+reynaMalla2.translateY(3);
+reynaMalla2.translateX(70);
 ///////////////////////////////////////////////Caballo 
 var p1Formahorse= new THREE.CylinderGeometry(1,1.5,1,false);
 var p2Formahorse= new THREE.CylinderGeometry(1,1,3,false);
@@ -276,7 +362,24 @@ escena.add(alfilMalla1);
 escena.add(alfilMalla2);
 escena.add(alfilMalla3);
 escena.add(alfilMalla4);
+ 
 escena.add(peonMalla1);
+escena.add(peonMalla2);
+escena.add(peonMalla3);
+escena.add(peonMalla4);
+escena.add(peonMalla5);
+escena.add(peonMalla6);
+escena.add(peonMalla7);
+escena.add(peonMalla8);
+escena.add(peonMalla9);
+escena.add(peonMalla10);
+escena.add(peonMalla11);
+escena.add(peonMalla12);
+escena.add(peonMalla13);
+escena.add(peonMalla14);
+escena.add(peonMalla15);
+escena.add(peonMalla16);
+ 
 escena.add(reynaMalla1)
 escena.add(reynaMalla2)
 escena.add(horseMalla1)
