@@ -173,13 +173,13 @@ var reynaMalla2= new THREE.Mesh(reynaForma,negras);
   
 reynaMalla1.rotateX(Math.PI/2);
 reynaMalla1.translateY(3);
-reynaMalla1.translateZ(-20); 
+reynaMalla1.translateZ(-10); 
 
  
 reynaMalla2.rotateX(Math.PI/2);
 reynaMalla2.translateY(3);
-reynaMalla2.translateZ(-20);
-reynaMalla2.translateX(-60);
+reynaMalla2.translateZ(-10);
+reynaMalla2.translateX(70);
 ///////////////////////////////////////////////Caballo 
 var p1Formahorse= new THREE.CylinderGeometry(1,1.5,1,false);
 var p2Formahorse= new THREE.CylinderGeometry(1,1,3,false);
