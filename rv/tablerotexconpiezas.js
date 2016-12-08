@@ -63,16 +63,16 @@ torreMalla1.translateZ(-70);
 
 torreMalla2.rotateX(Math.PI/2);
 torreMalla2.translateY(3);
-torreMalla2.translateZ(70); 
+
  
 torreMalla3.rotateX(Math.PI/2);
 torreMalla3.translateY(3);
-torreMalla3.translateZ(-70); 
+torreMalla3.translateX(70); 
 
 torreMalla4.rotateX(Math.PI/2);
 torreMalla4.translateY(3);
+torreMalla4.translateZ(-70); 
 torreMalla4.translateZ(70); 
-
  
 
  //////////////////////////////////Piezas Alfil
