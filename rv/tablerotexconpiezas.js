@@ -329,7 +329,7 @@ var p4Formarey= new THREE.BoxGeometry(2,2,5,false);
 p2Formarey.translate(0,3,0);
 p3Formarey.translate(0,6,0);
 p4Formarey.translate(0,8,0);
-p4Formarey.translate(0,11,0);
+p4Formarey.translate(0,15,0);
 
 var p1Mallarey= new THREE.Mesh(p1Formarey);
 var p2Mallarey= new THREE.Mesh(p2Formarey);
