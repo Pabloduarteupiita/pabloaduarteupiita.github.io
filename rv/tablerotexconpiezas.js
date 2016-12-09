@@ -325,23 +325,26 @@ var p1Formarey= new THREE.CylinderGeometry(2.8,2.5,3,false);
 var p2Formarey= new THREE.CylinderGeometry(2.1,1.8,3,false);
 var p3Formarey= new THREE.CylinderGeometry(2.3,2,2,false);
 var p4Formarey= new THREE.BoxGeometry(2,2,5,false);
-
+var p5Formarey= new THREE.BoxGeometry(2,5,2,false);
+ 
 p2Formarey.translate(0,3,0);
 p3Formarey.translate(0,6,0);
-p4Formarey.translate(0,8,0);
 p4Formarey.translate(0,15,0);
+p5Formarey.translate(0,15,0);
 
 var p1Mallarey= new THREE.Mesh(p1Formarey);
 var p2Mallarey= new THREE.Mesh(p2Formarey);
 var p3Mallarey= new THREE.Mesh(p3Formarey);
 var p4Mallarey= new THREE.Mesh(p3Formarey);
-
+var p5Mallarey= new THREE.Mesh(p3Formarey);
+ 
 var reyForma= new THREE.Geometry();
 
 reyForma.merge(p1Mallarey.geometry,p1Mallarey.matrix);
 reyForma.merge(p2Mallarey.geometry,p2Mallarey.matrix);
 reyForma.merge(p3Mallarey.geometry,p3Mallarey.matrix);
 reyForma.merge(p4Mallarey.geometry,p4Mallarey.matrix);
+reyForma.merge(p5Mallarey.geometry,p5Mallarey.matrix);
  
 var reyMalla1= new THREE.Mesh(reyForma,blancas);
 var reyMalla2= new THREE.Mesh(reyForma,negras);
