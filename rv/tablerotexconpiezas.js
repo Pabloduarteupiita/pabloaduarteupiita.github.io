@@ -278,7 +278,7 @@ var p1Formahorse= new THREE.CylinderGeometry(2,2,2,false);
 var p2Formahorse= new THREE.CylinderGeometry(1,1,3,false);
 var p3Formahorse= new THREE.BoxGeometry(2,2,3,false);
 var p4Formahorse= new THREE.BoxGeometry(1,2.5,1,false);
-var p5Formahorse= new THREE.BoxGeometry(3,1,1,false);
+var p5Formahorse= new THREE.BoxGeometry(1,3,1,false);
 
 p2Formahorse.translate(0,2,0);
 p3Formahorse.translate(0,5,0);
@@ -329,8 +329,8 @@ var p5Formarey= new THREE.BoxGeometry(2,5,2,false);
  
 p2Formarey.translate(0,3,0);
 p3Formarey.translate(0,6,0);
-p4Formarey.translate(0,15,0);
-p5Formarey.translate(0,15,0);
+p4Formarey.translate(0,10,0);
+p5Formarey.translate(0,10,0);
 
 var p1Mallarey= new THREE.Mesh(p1Formarey);
 var p2Mallarey= new THREE.Mesh(p2Formarey);
