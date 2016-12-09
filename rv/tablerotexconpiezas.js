@@ -121,12 +121,12 @@ alfilMalla4.translateX(70);
  
  
 /////////////////////////////////////////////Peon
-var p1Formapeon= new THREE.CylinderGeometry(1,1,1,false);
-var p2Formapeon= new THREE.CylinderGeometry(.5,.5,1,false);
+var p1Formapeon= new THREE.CylinderGeometry(1.5,1,1.5,false);
+var p2Formapeon= new THREE.CylinderGeometry(1,1,1,false);
 var p3Formapeon= new THREE.SphereGeometry(1,false);
 
-p2Formapeon.translate(0,2,0);
-p3Formapeon.translate(0,1.5,0);
+p2Formapeon.translate(0,1.5,0);
+p3Formapeon.translate(0,1,0);
 
 
 var p1Mallapeon= new THREE.Mesh(p1Formapeon);
@@ -240,13 +240,13 @@ peonMalla16.translateX(60);
 var p1Formareyna= new THREE.CylinderGeometry(2.5,2.5,4,false);
 var p2Formareyna= new THREE.CylinderGeometry(2,1.8,3,false);
 var p3Formareyna= new THREE.CylinderGeometry(2.3,2,3,false);
-var p4Formareyna= new THREE.SphereGeometry(3,false);
-var p5Formareyna= new THREE.SphereGeometry(2,false);
+var p4Formareyna= new THREE.SphereGeometry(2,false);
+var p5Formareyna= new THREE.SphereGeometry(1,false);
  
 p2Formareyna.translate(0,4,0);
 p3Formareyna.translate(0,7,0);
-p4Formareyna.translate(0,12,0);
-p5Formareyna.translate(0,14,0);
+p4Formareyna.translate(0,11,0);
+p5Formareyna.translate(0,12,0);
 
 var p1Mallareyna= new THREE.Mesh(p1Formareyna);
 var p2Mallareyna= new THREE.Mesh(p2Formareyna);
