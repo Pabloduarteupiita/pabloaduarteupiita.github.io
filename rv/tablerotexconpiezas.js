@@ -15,9 +15,9 @@ function setup(){
   
 //////////////////////////////////Piezas
 //////////////////////////////////////////////////Torre 
-var p1Forma= new THREE.CylinderGeometry(1.5,1.5,2,false);
-var p2Forma= new THREE.CylinderGeometry(1,1,1,false);
-var p3Forma= new THREE.CylinderGeometry(.8,1,.6,false);
+var p1Forma= new THREE.CylinderGeometry(2.5,2.5,3,false);
+var p2Forma= new THREE.CylinderGeometry(2,2,3,false);
+var p3Forma= new THREE.CylinderGeometry(2.5,2.5,1,false);
 
 var p4Forma= new THREE.CylinderGeometry(0,.5,.5,false);
 var p5Forma= new THREE.CylinderGeometry(0,.5,.5,false);
@@ -27,10 +27,10 @@ var p7Forma= new THREE.CylinderGeometry(0,.5,.5,false);
 p2Forma.translate(0,2,0);
 p3Forma.translate(0,3,0);
 
-p4Forma.translate(.5,3,.5);
-p5Forma.translate(.5,3,-.5);
-p6Forma.translate(-.5,3,.5);
-p7Forma.translate(-.2,3,-.2);
+p4Forma.translate(.5,7,.5);
+p5Forma.translate(.5,7,-.5);
+p6Forma.translate(-.5,7,.5);
+p7Forma.translate(-.2,7,-.2);
 
 
 var p1Malla= new THREE.Mesh(p1Forma);
@@ -238,14 +238,14 @@ peonMalla16.translateY(3);
 peonMalla16.translateX(60); 
  
 ///////////////////////////////////////////////Reyna 
-var p1Formareyna= new THREE.CylinderGeometry(2.5,2.2,3,false);
+var p1Formareyna= new THREE.CylinderGeometry(2.5,2.2,4,false);
 var p2Formareyna= new THREE.CylinderGeometry(2,1.8,3,false);
-var p3Formareyna= new THREE.CylinderGeometry(2.3,2.5,2,false);
-var p4Formareyna= new THREE.SphereGeometry(1.5,false);
+var p3Formareyna= new THREE.CylinderGeometry(2.3,2.5,4,false);
+var p4Formareyna= new THREE.SphereGeometry(2,false);
 
-p2Formareyna.translate(0,3,0);
-p3Formareyna.translate(0,5,0);
-p4Formareyna.translate(0,5,0);
+p2Formareyna.translate(0,4,0);
+p3Formareyna.translate(0,7,0);
+p4Formareyna.translate(0,11,0);
 
 
 var p1Mallareyna= new THREE.Mesh(p1Formareyna);
