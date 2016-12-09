@@ -282,8 +282,8 @@ var p5Formahorse= new THREE.BoxGeometry(3,1,1,false);
 
 p2Formahorse.translate(0,2,0);
 p3Formahorse.translate(0,5,0);
-p4Formahorse.translate(1,7,0);
-p5Formahorse.translate(2,7,0);
+p4Formahorse.translate(1,6,0);
+p5Formahorse.translate(2,6,0);
 
 var p1Mallahorse= new THREE.Mesh(p1Formahorse);
 var p2Mallahorse= new THREE.Mesh(p2Formahorse);
