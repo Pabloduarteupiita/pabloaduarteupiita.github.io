@@ -24,8 +24,8 @@ var p5Forma= new THREE.CylinderGeometry(0,.5,.5,false);
 var p6Forma= new THREE.CylinderGeometry(0,.5,.5,false);
 var p7Forma= new THREE.CylinderGeometry(0,.5,.5,false);
 
-p2Forma.translate(0,2,0);
-p3Forma.translate(0,3,0);
+p2Forma.translate(0,3,0);
+p3Forma.translate(0,5,0);
 
 p4Forma.translate(.5,7,.5);
 p5Forma.translate(.5,7,-.5);
@@ -82,7 +82,6 @@ var p3Formaalf= new THREE.CylinderGeometry(1,1,2.5,false);
 
 p2Formaalf.translate(0,4,0);
 p3Formaalf.translate(0,7.5,0);
-
 
 var p1Mallaalf= new THREE.Mesh(p1Formaalf);
 var p2Mallaalf= new THREE.Mesh(p2Formaalf);
