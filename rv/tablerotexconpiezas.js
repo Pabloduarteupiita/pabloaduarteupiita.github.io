@@ -322,7 +322,7 @@ horseMalla4.translateX(70);
 var p1Formarey= new THREE.CylinderGeometry(2.5,2.2,3,false);
 var p2Formarey= new THREE.CylinderGeometry(2,1.8,3,false);
 var p3Formarey= new THREE.CylinderGeometry(2.3,2.5,2,false);
-var p4Formarey= new THREE.BoxGeometry(1.5,1.5,1.5false);
+var p4Formarey= new THREE.BoxGeometry(1.5,1.5,1.5,false);
 
 p2Formarey.translate(0,3,0);
 p3Formarey.translate(0,5,0);
