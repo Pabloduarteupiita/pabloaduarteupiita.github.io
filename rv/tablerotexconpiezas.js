@@ -275,15 +275,15 @@ reynaMalla2.translateY(3);
 reynaMalla2.translateX(70);
 ///////////////////////////////////////////////Caballo 
 var p1Formahorse= new THREE.CylinderGeometry(2,2,2,false);
-var p2Formahorse= new THREE.CylinderGeometry(1,1,3,false);
+var p2Formahorse= new THREE.CylinderGeometry(1,1,4,false);
 var p3Formahorse= new THREE.BoxGeometry(1,1,2,false);
 var p4Formahorse= new THREE.BoxGeometry(1,2.5,1,false);
 var p5Formahorse= new THREE.BoxGeometry(3,1,1,false);
 
 p2Formahorse.translate(0,2,0);
 p3Formahorse.translate(0,5,0);
-p4Formahorse.translate(1,8,0);
-p5Formahorse.translate(2,8,0);
+p4Formahorse.translate(1,7,0);
+p5Formahorse.translate(2,7,0);
 
 var p1Mallahorse= new THREE.Mesh(p1Formahorse);
 var p2Mallahorse= new THREE.Mesh(p2Formahorse);
