@@ -25,7 +25,7 @@ var p6Forma= new THREE.CylinderGeometry(0,.8,.5,false);
 var p7Forma= new THREE.CylinderGeometry(0,.8,.5,false);
 
 p2Forma.translate(0,3,0);
-p3Forma.translate(0,5,0);
+p3Forma.translate(0,6,0);
 
 p4Forma.translate(.8,7,.8);
 p5Forma.translate(.8,7,-.8);
@@ -241,23 +241,26 @@ var p1Formareyna= new THREE.CylinderGeometry(2.5,2.5,4,false);
 var p2Formareyna= new THREE.CylinderGeometry(2,1.8,3,false);
 var p3Formareyna= new THREE.CylinderGeometry(2.3,2,3,false);
 var p4Formareyna= new THREE.SphereGeometry(3,false);
-
+var p5Formareyna= new THREE.SphereGeometry(2,false);
+ 
 p2Formareyna.translate(0,4,0);
 p3Formareyna.translate(0,7,0);
 p4Formareyna.translate(0,12,0);
-
+p5Formareyna.translate(0,14,0);
 
 var p1Mallareyna= new THREE.Mesh(p1Formareyna);
 var p2Mallareyna= new THREE.Mesh(p2Formareyna);
 var p3Mallareyna= new THREE.Mesh(p3Formareyna);
-var p4Mallareyna= new THREE.Mesh(p3Formareyna);
-
+var p4Mallareyna= new THREE.Mesh(p4Formareyna);
+var p5Mallareyna= new THREE.Mesh(p5Formareyna);
+ 
 var reynaForma= new THREE.Geometry();
 
 reynaForma.merge(p1Mallareyna.geometry,p1Mallareyna.matrix);
 reynaForma.merge(p2Mallareyna.geometry,p2Mallareyna.matrix);
 reynaForma.merge(p3Mallareyna.geometry,p3Mallareyna.matrix);
 reynaForma.merge(p4Mallareyna.geometry,p4Mallareyna.matrix);
+reynaForma.merge(p5Mallareyna.geometry,p5Mallareyna.matrix);
  
 var reynaMalla1= new THREE.Mesh(reynaForma,blancas);
 var reynaMalla2= new THREE.Mesh(reynaForma,negras);
