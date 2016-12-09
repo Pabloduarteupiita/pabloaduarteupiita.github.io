@@ -276,7 +276,7 @@ reynaMalla2.translateX(70);
 ///////////////////////////////////////////////Caballo 
 var p1Formahorse= new THREE.CylinderGeometry(2,2,2,false);
 var p2Formahorse= new THREE.CylinderGeometry(1,1,3,false);
-var p3Formahorse= new THREE.BoxGeometry(2,2,3,false);
+var p3Formahorse= new THREE.BoxGeometry(1,1,2,false);
 var p4Formahorse= new THREE.BoxGeometry(1,2.5,1,false);
 var p5Formahorse= new THREE.BoxGeometry(1,3,1,false);
 
@@ -289,20 +289,23 @@ p5Formahorse.translate(2,8,0);
 var p1Mallahorse= new THREE.Mesh(p1Formahorse);
 var p2Mallahorse= new THREE.Mesh(p2Formahorse);
 var p3Mallahorse= new THREE.Mesh(p3Formahorse);
-var p4Mallahorse= new THREE.Mesh(p3Formahorse);
-
+var p4Mallahorse= new THREE.Mesh(p4Formahorse);
+var p5Mallahorse= new THREE.Mesh(p5Formahorse);
+ 
 var horseForma= new THREE.Geometry();
 
 horseForma.merge(p1Mallahorse.geometry,p1Mallahorse.matrix);
 horseForma.merge(p2Mallahorse.geometry,p2Mallahorse.matrix);
 horseForma.merge(p3Mallahorse.geometry,p3Mallahorse.matrix);
 horseForma.merge(p4Mallahorse.geometry,p4Mallahorse.matrix);
+horseForma.merge(p5Mallahorse.geometry,p5Mallahorse.matrix);
  
 var horseMalla1= new THREE.Mesh(horseForma,blancas);
 var horseMalla2= new THREE.Mesh(horseForma,blancas);
 var horseMalla3= new THREE.Mesh(horseForma,negras);
 var horseMalla4= new THREE.Mesh(horseForma,negras); 
- 
+
+
 horseMalla1.rotateX(Math.PI/2);
 horseMalla1.translateY(3);
 horseMalla1.translateZ(-10); 
@@ -335,8 +338,8 @@ p5Formarey.translate(0,10,0);
 var p1Mallarey= new THREE.Mesh(p1Formarey);
 var p2Mallarey= new THREE.Mesh(p2Formarey);
 var p3Mallarey= new THREE.Mesh(p3Formarey);
-var p4Mallarey= new THREE.Mesh(p3Formarey);
-var p5Mallarey= new THREE.Mesh(p3Formarey);
+var p4Mallarey= new THREE.Mesh(p4Formarey);
+var p5Mallarey= new THREE.Mesh(p5Formarey);
  
 var reyForma= new THREE.Geometry();
 
