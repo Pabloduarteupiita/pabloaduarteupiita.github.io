@@ -365,7 +365,7 @@ reyMalla2.translateX(70);
   var planoLejano = 1000;
   camara = new THREE.PerspectiveCamera(campoVision, relacionAspecto, planoCercano, planoLejano);
   camara.position.z=50;
-  camara.position.x=160;
+  camara.position.x=100;
   camara.position.y=40;
   camara.lookAt(new THREE.Vector3(40,40,0));
   camara.rotateZ(Math.PI/2);
