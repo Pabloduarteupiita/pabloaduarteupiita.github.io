@@ -12,11 +12,11 @@ function setup(){
  var text4=new THREE.TextureLoader().load('mad.jpg');
  var text5=new THREE.TextureLoader().load('gr.jpg');
   
- var blancas= new THREE.MeshBasicMaterial({map:text1});
- var negras= new THREE.MeshBasicMaterial({map:text2});
- var madera1= new THREE.MeshBasicMaterial({map:text3});
- var madera2= new THREE.MeshBasicMaterial({map:text4});
- var granito= new THREE.MeshBasicMaterial({map:text5});
+ var blancas= new THREE.MeshLambertMaterial({map:text1});
+ var negras= new THREE.MeshLambertMaterial({map:text2});
+ var madera1= new THREE.MeshLambertMaterial({map:text3});
+ var madera2= new THREE.MeshLambertMaterial({map:text4});
+ var granito= new THREE.MeshLambertMaterial({map:text5});
   
 //////////////////////////////////Piezas
 //////////////////////////////////////////////////Torre 
