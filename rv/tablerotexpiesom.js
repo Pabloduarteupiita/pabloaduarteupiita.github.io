@@ -449,7 +449,7 @@ escena.add(iluminacion);
 renderizador = new THREE.WebGLRenderer();
 renderizador.setSize(window.innerWidth-100, window.innerHeight-100);
 renderizador.shadowMapEnabled=true;
-torreMalla.castShadow=true;
+torreMalla1.castShadow=true;
 base.receiveShadow=true;
 iluminacion.castShadow=true;
 document.body.appendChild(renderizador.domElement);
