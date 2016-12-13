@@ -1,4 +1,9 @@
 var camara, escena, rederizador;
+var iluminacion= new THREE.PointLight(0xFFFFFF);
+iluminacion.position.y= 40;
+iluminacion.position.x= 40;
+iluminacion.position.z= 50;
+
 function setup(){
 
  var text1=new THREE.TextureLoader().load('crb.jpg');
@@ -7,11 +12,11 @@ function setup(){
  var text4=new THREE.TextureLoader().load('mad.jpg');
  var text5=new THREE.TextureLoader().load('gr.jpg');
   
- var blancas= new THREE.MeshBasicMaterial({map:text1});
- var negras= new THREE.MeshBasicMaterial({map:text2});
- var madera1= new THREE.MeshBasicMaterial({map:text3});
- var madera2= new THREE.MeshBasicMaterial({map:text4});
- var granito= new THREE.MeshBasicMaterial({map:text5});
+ var blancas= new THREE.MeshLambertMaterial({map:text1});
+ var negras= new THREE.MeshLambertMaterial({map:text2});
+ var madera1= new THREE.MeshLambertMaterial({map:text3});
+ var madera2= new THREE.MeshLambertMaterial({map:text4});
+ var granito= new THREE.MeshLambertMaterial({map:text5});
   
 //////////////////////////////////Piezas
 //////////////////////////////////////////////////Torre 
@@ -439,14 +444,39 @@ escena.add(horseMalla3);
 escena.add(horseMalla4) ;
 escena.add(reyMalla1);
 escena.add(reyMalla2);
- 
+
+escena.add(iluminacion);
 renderizador = new THREE.WebGLRenderer();
-renderizador.setSize(window.innerWidth, window.innerHeight);
+renderizador.setSize(window.innerWidth-100, window.innerHeight-100);
+renderizador.shadowMapEnabled=true;
+torreMalla1.castShadow=true;
+base.receiveShadow=true;
+iluminacion.castShadow=true;
 document.body.appendChild(renderizador.domElement);
 }
 function loop(){
+  function desplazar(objeto){
+    var tecla = objeto.which;
+        switch (tecla){
+            case 37 :   
+                torreMalla1.translateX(10);
+                break;
+            case 38 : 
+                torreMalla1.translateZ(-10);
+                break;
+            case 39 :  
+                torreMalla1.translateZ(10);
+              
+                break;
+            case 40 : 
+                torreMalla1.translateX(-10);
+                break;
+        default :alert("Pulse otra tecla");
+        }
+    }
   requestAnimationFrame(loop);
   renderizador.render(escena,camara);
 }
 setup();
 loop();
+
