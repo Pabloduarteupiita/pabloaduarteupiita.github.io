@@ -1,8 +1,8 @@
 var camara, escena, rederizador;
 var iluminacion= new THREE.PointLight(0xFFFFFF);
-iluminacion.position.y= 40;
-iluminacion.position.x= 40;
-iluminacion.position.z= 50;
+iluminacion.position.y= 30;
+iluminacion.position.x= 30;
+iluminacion.position.z= 40;
 
 function setup(){
 
@@ -447,7 +447,7 @@ escena.add(reyMalla2);
 
 escena.add(iluminacion);
 renderizador = new THREE.WebGLRenderer();
-renderizador.setSize(window.innerWidth-100, window.innerHeight-100);
+renderizador.setSize(window.innerWidth-110, window.innerHeight-110);
 renderizador.shadowMapEnabled=true;
 torreMalla1.castShadow=true;
 base.receiveShadow=true;
@@ -459,17 +459,17 @@ function loop(){
     var tecla = objeto.which;
         switch (tecla){
             case 37 :   
-                torreMalla1.translateX(10);
+                peonMalla1.translateX(10);
                 break;
             case 38 : 
-                torreMalla1.translateZ(-10);
+                peonMalla1.translateZ(-10);
                 break;
             case 39 :  
-                torreMalla1.translateZ(10);
+                peonMalla1.translateZ(10);
               
                 break;
             case 40 : 
-                torreMalla1.translateX(-10);
+                peonMalla1.translateX(-10);
                 break;
         default :alert("Pulse otra tecla");
         }
